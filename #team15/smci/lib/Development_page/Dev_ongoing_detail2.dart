@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Dev_ongoingDetail1 extends StatefulWidget {
-  const Dev_ongoingDetail1({Key? key}) : super(key: key);
+class Dev_ongoingDetail2 extends StatefulWidget {
+  const Dev_ongoingDetail2({Key? key}) : super(key: key);
 
   @override
-  _Dev_ongoingDetail1State createState() => _Dev_ongoingDetail1State();
+  _Dev_ongoingDetail2State createState() => _Dev_ongoingDetail2State();
 }
 
-class _Dev_ongoingDetail1State extends State<Dev_ongoingDetail1> {
+class _Dev_ongoingDetail2State extends State<Dev_ongoingDetail2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,46 +60,26 @@ class _Dev_ongoingDetail1State extends State<Dev_ongoingDetail1> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.location_city,
+                          Icons.add_road,
                           size: 40,
-                          // color: Colors.yellow[700],
+                          // color: Colors.green,
                         ),
                         title: Text(
-                          'Prashasan Bhawan Reconstruction',
+                          'Road_name',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text(
-                          '''                          
-Location 1
+                        subtitle: Text('''                          
+Location 2
 
 Tender : Ramprakash Pvt. Ltd.
 Budget : 35 Crores
 Starting date : 12/02/2020
 Expected Ending date : 01/01/2021
-                        ''',
-                          textScaleFactor: 1.2,
-                        ),
+                        '''),
                         onTap: () {
                           setState(() {});
                         },
                       ),
-                      // ListTile(
-                      //   leading: Icon(
-                      //     Icons.add_road,
-                      //     size: 40,
-                      //     // color: Colors.green,
-                      //   ),
-                      //   title: Text(
-                      //     'Road_name',
-                      //     textScaleFactor: 1.2,
-                      //   ),
-                      //   subtitle: Text('location 2'),
-                      //   onTap: () {
-                      //     setState(() {
-                      //       print("2");
-                      //     });
-                      //   },
-                      // ),
                       // ListTile(
                       //   leading: Icon(
                       //     Icons.railway_alert_rounded,

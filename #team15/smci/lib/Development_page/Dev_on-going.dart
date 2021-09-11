@@ -91,6 +91,8 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                         onTap: () {
                           setState(() {
                             print("2");
+                            Navigator.pushNamed(
+                                context, '/DevelopmentPage_ongoing_detail_2');
                           });
                         },
                       ),
@@ -108,6 +110,8 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                         onTap: () {
                           setState(() {
                             print("3");
+                            Navigator.pushNamed(
+                                context, '/DevelopmentPage_ongoing_detail_3');
                           });
                         },
                       ),
@@ -124,7 +128,9 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                         subtitle: Text('location 4'),
                         onTap: () {
                           setState(() {
-                            print("2");
+                            print("4");
+                            Navigator.pushNamed(
+                                context, '/DevelopmentPage_ongoing_detail_4');
                           });
                         },
                       ),
