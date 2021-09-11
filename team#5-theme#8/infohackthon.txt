@@ -1,0 +1,32 @@
+  home        
+-menue
+  1 solar energy(electrical)
+  2 wind energy
+  3 solar ( heat )
+  4  geothermal (india)
+  5 hydropower 
+  6 biomass 
+  //8 H- fuel
+  7 tidal energy
+  8 radiant energy
+  9 nuclear energy
+-news section
+use current keyword in google news feed 
+                                                                                    
+- facts of renewable energy
+
+ @#solar e - 
+Fact 1: The earth gets 174 Petawatts of incoming solar radiation in the upper atmosphere. About 30% is reflected back to space, and the rest is absorbed by oceans, clouds and landmasses.
+Fact 2: Solar technology can be distinguished into active and passive. Photovoltaic panels and solar thermal collectors which harness solar energy are examples of active solar technology. Passive technology includes constructing rooms to improve air circulation, orienting space to use sunlight favorably.
+Fact 3: 7. Solar energy is the cheapest source of energy in the world as of 2017. Solar energy is cheaper than fossil fuels as of 2019.
+Fact 4: Alexandre Becquerel discovered the photovoltaic effect in 1839.
+Fact 5: Solar panels produce 10 kilowatt-hours of electricity per square foot.Solar panels don’t need direct sunlight to generate electricity.
+Fact 6: To power the whole earth with solar energy, it would require 191,000 square miles of solar panels.In 30 years, the average rooftop solar panel system can reduce pollution by 100 tons of carbon dioxide.
+Fact 7: The average solar panel has a 25-year warranty.The most efficient solar panels are made from monocrystalline silicon.
+Fact 8:The average solar panel system operates at 20% efficiency, meaning that it converts 20% of the sunlight that hits it into electricity.
+
+
+-how to use website 
+-about website 
+-technowlogy used 
+-issue box (for error and feedback ) 
