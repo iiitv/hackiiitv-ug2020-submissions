@@ -1,3 +1,9 @@
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
 const Login = () => {
 
     // alert('hello stop me');
@@ -12,28 +18,28 @@ const Login = () => {
         }),
     };
     console.log(requestOptions);
-     fetch(`${api_base_uri}/login`, requestOptions)
+     fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/login`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
             console.log('sd');
-            if (data.error) {
-                alert('something get wrong');
+            if (data.error_code) {
+                alert('something got wrong');
             }
             if (data.goto) {
-                location.replace(data.goto);
-                return;
+                // location.replace(data.goto);
+                // return;
                 console.log('change page')
                 // window.open(data.goto, '_self');
             }
             // window.open('/', '_self');
-            location.replace("/");
+          
         });
 }
 
 logout=()=>{
     console.log("working");
-    fetch(`${api_base_uri}/logout`, {
+    fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/logout`, {
         method: 'GET',
         credentials: 'include'})
         .then((response) => response.json())

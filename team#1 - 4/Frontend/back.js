@@ -1,10 +1,15 @@
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
 let data;
 resp='true';
 logfunc=()=>{
     console.log("hello");
     //here we will be recieving response form the server in temp
 const get_user_info = () => {
-    fetch(`${api_base_uri}/me`, {
+    fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/me`, {
         method: 'GET',
         credentials: 'include'})
         .then((response) => response.json())
@@ -14,8 +19,8 @@ const get_user_info = () => {
     }
         const process_user_info = (data) => {
             console.log(data);
-            let msg = data.msg;
-            let user = data.username;
+            // let msg = data.msg;
+            let user = data.name;
             let loggedin = data.loggedin;
             let error = data.error;
             if (error) {
@@ -63,10 +68,6 @@ const get_user_info = () => {
             console.log("testfalse");
             
         }
-        }
-        
-        const Login = () => {
-            window.open(github_oauth_url, '_self');
         }
         
     get_user_info()
