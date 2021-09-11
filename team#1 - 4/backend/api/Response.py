@@ -7,6 +7,12 @@ class AlreadyLogin(TypedDict):
     goto: str
 
 
+class LoginReqResponse(TypedDict):
+    error_code: int
+    msg: str
+    goto: str
+
+
 class UserAlreadyExist(TypedDict):
     error_code: int
     msg: str

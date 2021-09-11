@@ -10,6 +10,7 @@ from rest_framework.decorators import api_view
 from account.models import User
 from doctor.models import Doctor, Degree
 from patient.models import Patient
+from .decorators import logout_in_req, login_req
 
 from .serializers import PatientRegisterSerializer, DocRegisterSerializer, LoginSerializer
 from .Response import AlreadyLogin, RegistrationSuccess, BasicError, LoginSuccess, LogoutSuccess, UserAlreadyExist
@@ -21,11 +22,8 @@ def ping(request: Request):
 
 
 @api_view(['POST'])
+@logout_in_req
 def patient_register(request: Request):
-    if not request.user.is_anonymous:
-        if hasattr(request.user, 'doctor'):
-            return Response(AlreadyLogin(msg='Already logged in', goto='/doctor', error_code=1))
-        return Response(AlreadyLogin(msg='Already logged in', goto='/', error_code=1))
 
     data = PatientRegisterSerializer(data=request.data)
 
@@ -49,11 +47,8 @@ def patient_register(request: Request):
 
 
 @api_view(['POST'])
+@logout_in_req
 def doctor_registration(request: Request):
-    if not request.user.is_anonymous:
-        if hasattr(request.user, 'doctor'):
-            return Response(AlreadyLogin(msg='Already logged in', goto='/doctor', error_code=1))
-        return Response(AlreadyLogin(msg='Already logged in', goto='/', error_code=1))
 
     data = DocRegisterSerializer(data=request.data)
 
@@ -62,17 +57,17 @@ def doctor_registration(request: Request):
         errors.update({'error_code': 4})
         return Response(errors, status=status.HTTP_400_BAD_REQUEST)
 
-    _data = data.data
+    data = data.data
 
-    _users1 = User.objects.filter(username=_data.get('aadhaar_number'))
-    _users2 = User.objects.filter(email=_data.get('email'))
+    _users1 = User.objects.filter(username=data.get('aadhaar_number'))
+    _users2 = User.objects.filter(email=data.get('email'))
     if _users1.exists() or _users2.exists():
         return Response(UserAlreadyExist(error_code=9, msg='User Already exist', goto='/login'),
                         status=status.HTTP_400_BAD_REQUEST)
 
-    user: User = User.objects.create_user(email=_data.get('email'), password=_data.get('password'),
-                                          username=_data.get('aadhaar_number'), name=_data.get('name'))
-    doc = Doctor.objects.create(user=user, latitude=float(_data.get('latitude')), longitude=float(_data.get('longitude')))
+    user: User = User.objects.create_user(email=data.get('email'), password=data.get('password'),
+                                          username=data.get('aadhaar_number'), name=data.get('name'))
+    doc = Doctor.objects.create(user=user, latitude=float(data.get('latitude')), longitude=float(data.get('longitude')))
     print(data)
     if image := request.data.get('upload'):
         image: InMemoryUploadedFile
@@ -85,11 +80,8 @@ def doctor_registration(request: Request):
 
 
 @api_view(['POST'])
+@logout_in_req
 def login(request: Request):
-    if not request.user.is_anonymous:
-        if hasattr(request.user, 'doctor'):
-            return Response(AlreadyLogin(msg='Already logged in', goto='/doctor', error_code=1))
-        return Response(AlreadyLogin(msg='Already logged in', goto='/', error_code=1))
 
     data = LoginSerializer(data=request.data)
     if not data.is_valid():
@@ -115,3 +107,9 @@ def logout(request: Request):
     if request.user.is_authenticated:
         django_logout(request)
     return Response(LogoutSuccess(goto='/'))
+
+
+@api_view(['POST'])
+@login_req
+def lookup(request: Request):
+    ...

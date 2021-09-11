@@ -39,7 +39,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-ALLOWED_HOSTS = ['api.benlotus.com', '127.0.0.1']
+ALLOWED_HOSTS = ['api.benlotus.com', '127.0.0.1', 'hackiiitv.thetgnteam.com']
 
 AUTH_USER_MODEL = 'account.User'
 # Application definition
