@@ -27,6 +27,7 @@
 
 .about section .tag-container {
   width: 69%;
+  padding-left: 50px;
 }
 
 .about section .tag-container h2 {
@@ -40,6 +41,7 @@
 }
 
 .about .register-container {
+  padding-left: 40px;
   display: inline-block;
 }
 
