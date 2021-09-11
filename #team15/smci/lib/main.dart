@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:smci/Dev_on-going.dart';
-import 'package:smci/Development_around.dart';
+import 'package:smci/Development_page/Dev_on-going.dart';
+import 'package:smci/Development_page/Dev_ongoing_detail1.dart';
+import 'package:smci/Development_page/Development_around.dart';
 import 'package:smci/login.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         "/LoginPage": (context) => Login(),
         "/DevelopmentPage": (context) => Dev_main(),
         "/DevelopmentPage_ongoing": (context) => Dev_ongoing(),
+        "/DevelopmentPage_ongoing_detail_1": (context) => Dev_ongoingDetail1(),
       },
       // home: Login(),
       home: Dev_main(),

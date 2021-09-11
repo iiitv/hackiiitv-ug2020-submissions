@@ -72,6 +72,8 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                         onTap: () {
                           setState(() {
                             print("1");
+                            Navigator.pushNamed(
+                                context, '/DevelopmentPage_ongoing_detail_1');
                           });
                         },
                       ),
