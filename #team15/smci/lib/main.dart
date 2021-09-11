@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:smci/Development_page/Dev_on-going.dart';
-import 'package:smci/Development_page/Dev_ongoing_detail1.dart';
-import 'package:smci/Development_page/Dev_ongoing_detail2.dart';
-import 'package:smci/Development_page/Dev_ongoing_detail3.dart';
-import 'package:smci/Development_page/Dev_ongoing_detail4.dart';
+import 'package:smci/Development_page/Dev_on-going/Dev_on-going.dart';
+import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail1.dart';
+import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail2.dart';
+import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail3.dart';
+import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail4.dart';
 import 'package:smci/Development_page/Development_around.dart';
 import 'package:smci/login.dart';
 
