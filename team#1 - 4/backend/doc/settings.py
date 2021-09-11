@@ -27,8 +27,10 @@ DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = ['thetgnteam.com', 'hackiiitv.thetgnteam.com', 'localhost']
 
-CSRF_COOKIE_DOMAIN = 'localhost'
+# CSRF_COOKIE_DOMAIN = 'localhost'
 CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOWED_ORIGINS = [
