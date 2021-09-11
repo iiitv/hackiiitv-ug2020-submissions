@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    .nav-link{
+        text-decoration: none;
+    }
+    .logo{
+        display: flex;
+        img{
+            width: 68px;
+        }
+    }
+    .navitems{
+        display: flex;
+    }
+}
