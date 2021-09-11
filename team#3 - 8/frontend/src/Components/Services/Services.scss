@@ -1,0 +1,32 @@
+.services{
+    .heading{
+        text-align: center;
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .services-grid{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 1rem;
+        .grid-child{
+            width: 20vw;
+            height: 20vh;
+            margin: 0 auto;
+            text-align: center;
+            h3{
+                
+            }
+            p{
+                
+            }
+        }
+        .services-link{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

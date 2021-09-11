@@ -1,0 +1,32 @@
+.services .heading {
+  text-align: center;
+}
+
+.services .heading h2 {
+  font-size: 36px;
+}
+
+.services .heading p {
+  font-size: 18px;
+}
+
+.services .services-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.services .services-grid .grid-child {
+  width: 20vw;
+  height: 20vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services .services-grid .services-link {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=Services.css.map */
