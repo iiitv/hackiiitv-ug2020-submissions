@@ -51,6 +51,9 @@ app.get('/', function(req, res) {
 // * get /login route
 
 // * get /register route
+app.get('/register', function(req, res) {
+  res.render('register');
+});
 
 // * get /dashboard route
 
@@ -61,6 +64,6 @@ app.get('/', function(req, res) {
 // * post /login route
 
 // * listen to PORT
-app.listen(PORT || 3000, function() {
+app.listen(3000, function() {
     console.log("Listening to PORT 3000");
 });
