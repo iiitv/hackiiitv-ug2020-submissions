@@ -18,4 +18,19 @@ p{
 .Tittle{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 40px;
+  color:rgb(241, 24, 42);
+}
+.Hinditext{
+  font-size: 40px;
+  color: rgb(240, 39, 39);
+  text-align: center;
+  font-weight: 1000;
+}
+.Service{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(1, 16, 24);
+}
+body.background{
+  height: auto;
 }
