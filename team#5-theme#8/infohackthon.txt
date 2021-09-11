@@ -1,0 +1,11 @@
+ home        
+-menue
+  1 solar energy
+  2 wind energy
+   
+-news section                                                                                    
+- facts of renewable energy 
+-how to use website 
+-about website 
+-technowlogy used 
+-issue box (for error and feedback ) 
