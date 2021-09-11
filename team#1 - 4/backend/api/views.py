@@ -13,7 +13,15 @@ from patient.models import Patient
 from .decorators import logout_in_req, login_req
 
 from .serializers import PatientRegisterSerializer, DocRegisterSerializer, LoginSerializer
-from .Response import AlreadyLogin, RegistrationSuccess, BasicError, LoginSuccess, LogoutSuccess, UserAlreadyExist
+from .Response import AlreadyLogin, RegistrationSuccess, BasicError, LoginSuccess, LogoutSuccess, UserAlreadyExist, MeResponse
+
+
+@api_view()
+def me(request: Request):
+    if request.user.is_authenticated:
+        user: User = request.user
+        return Response(MeResponse(logged_in=True, name=user.name))
+    return Response(MeResponse(logged_in=False, name=None))
 
 
 @api_view()
