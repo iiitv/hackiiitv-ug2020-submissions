@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:smci/Development_page/Dev_Future/Dev_Future.dart';
+import 'package:smci/Development_page/Dev_Future/Dev_Future_detail1.dart';
+import 'package:smci/Development_page/Dev_Future/Dev_Future_detail2.dart';
+import 'package:smci/Development_page/Dev_Future/Dev_Future_detail3.dart';
+import 'package:smci/Development_page/Dev_Future/Dev_Future_detail4.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_on-going.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail1.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail2.dart';
@@ -41,6 +46,11 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_ongoing_detail_2": (context) => Dev_ongoingDetail2(),
         "/DevelopmentPage_ongoing_detail_3": (context) => Dev_ongoingDetail3(),
         "/DevelopmentPage_ongoing_detail_4": (context) => Dev_ongoingDetail4(),
+        "/DevelopmentPage_Future": (context) => Dev_Future(),
+        "/DevelopmentPage_Future_detail_1": (context) => Dev_FutureDetail1(),
+        "/DevelopmentPage_Future_detail_2": (context) => Dev_FutureDetail2(),
+        "/DevelopmentPage_Future_detail_3": (context) => Dev_FutureDetail3(),
+        "/DevelopmentPage_Future_detail_4": (context) => Dev_FutureDetail4(),
       },
       // home: Login(),
       home: Dev_main(),
