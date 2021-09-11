@@ -18,7 +18,7 @@ const Login = () => {
         }),
     };
     console.log(requestOptions);
-     fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/login`, requestOptions)
+     fetch(`http://api.pand.ml:3000/api/v1/login`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
@@ -39,7 +39,7 @@ const Login = () => {
 
 logout=()=>{
     console.log("working");
-    fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/logout`, {
+    fetch(`http://api.pand.ml:3000/api/v1/logout`, {
         method: 'GET',
         credentials: 'include'})
         .then((response) => response.json())

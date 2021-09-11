@@ -9,7 +9,7 @@ logfunc=()=>{
     console.log("hello");
     //here we will be recieving response form the server in temp
 const get_user_info = () => {
-    fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/me`, {
+    fetch(`http://api.pand.ml:3000/api/v1/me`, {
         method: 'GET',
         credentials: 'include'})
         .then((response) => response.json())

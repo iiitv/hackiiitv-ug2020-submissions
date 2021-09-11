@@ -33,7 +33,7 @@ const DRegister = () => {
         }),
     };
     console.log(requestOptions);
-     fetch(`http://hackiiitv.thetgnteam.com:3000/api/v1/doc-register`, requestOptions)
+     fetch(`http://api.pand.ml:3000/api/v1/doc-register`, requestOptions)
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
