@@ -18,18 +18,34 @@ app.use(bodyParser.urlencoded({
 }));
 
 // * use session here
+app.use(session({
+  secret: "Session Secret",
+  resave: false,
+  saveUninitialized: false
+}));
 
 // * initialize passport
+app.use(passport.initialize());
 
 // * start session using passport.session()
+app.use(passport.session());
 
 // * connect to mongoose
-
 // * set useCreateIndex to true
+mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+// mongoose.set("useCreateIndex", true);
 
 // * create mongoose schema
+const userSchema = new mongoose.Schema ({
+  email: String,
+  password: String,
+  googleId: String,
+  state: String
+});
 
 // * add plugins passportLocalMongoose and findOrCreate
+userSchema.plugin(passportLocalMongoose);
+userSchema.plugin(findOrCreate);
 
 // * declare User Model using the created mongoose Schema
 
@@ -49,13 +65,16 @@ app.get('/', function(req, res) {
 // * get /auth/google/dashboard route
 
 // * get /login route
+app.get('/login', function (req, res) {
+  res.render('/login');
+});
 
 // * get /register route
 app.get('/register', function(req, res) {
   res.render('register');
 });
 
-// * get /dashboard route
+// * get /main route
 
 // * get /logout route
 
