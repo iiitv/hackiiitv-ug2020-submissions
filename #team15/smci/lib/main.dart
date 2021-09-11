@@ -14,6 +14,7 @@ import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail2.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail3.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail4.dart';
 import 'package:smci/Development_page/Development_around.dart';
+import 'package:smci/Development_page/Feedback.dart';
 import 'package:smci/login.dart';
 
 void main() {
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_Await": (context) => Dev_Await(),
         "/DevelopmentPage_Await_detail_1": (context) => Dev_AwaitDetail1(),
         "/DevelopmentPage_Await_detail_2": (context) => Dev_AwaitDetail2(),
+        "/DevelopmentPage_Feedback": (context) => Dev_feedback(),
       },
       // home: Login(),
       home: Dev_main(),

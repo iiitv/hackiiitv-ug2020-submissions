@@ -124,7 +124,9 @@ class _Dev_mainState extends State<Dev_main> {
                         ),
                         onTap: () {
                           setState(() {
-                            print("2");
+                            print("4");
+                            Navigator.pushNamed(
+                                context, '/DevelopmentPage_Feedback');
                           });
                         },
                       ),
