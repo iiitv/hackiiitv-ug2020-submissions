@@ -2,7 +2,7 @@
 # E-Governance / Title / Name
 
 We intend to create a website that digitizes the whole process of issuing goverment documents and certificates.
-Along with this, the website will have features, that digitizes various processes which are usually known to be cumbersome and physical, like renewal of PAN card, updation of Aadhar card, Ration card and other similar kind of ordeals.
+Along with this, the website will have features, that digitizes various processes which are usually known to be cumbersome and physical, like renewal of PAN card, updation of Aadhar card, Ration card and other similar kind of ordeals!
 
 
 
