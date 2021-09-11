@@ -1,5 +1,5 @@
 import Navbar from "../Navbar/Navbar";
-import About from "../About/About"
+import About from "../About/About";
 import Services from "../Services/Services";
 const Home = () => {
   return (

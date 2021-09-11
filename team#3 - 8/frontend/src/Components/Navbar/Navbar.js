@@ -32,6 +32,7 @@ const Navbar = () => {
           <div>Contact Us</div>
         </NavLink>
         <NavLink to="/login_signup" exact className="nav-link">
+          {/* *************** TO be corrected *************** */}
           <div>Login/Signup</div>
         </NavLink>
       </div>
