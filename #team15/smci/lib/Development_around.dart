@@ -26,6 +26,7 @@ class _Dev_mainState extends State<Dev_main> {
       ),
       drawer: Drawer(),
       body: SingleChildScrollView(
+        // physics: NeverScrollableScrollPhysics(),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,7 +53,7 @@ class _Dev_mainState extends State<Dev_main> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(30.0),
                 child: Container(
                   // color:Colors.blue[50],
                   child: Column(
@@ -60,10 +61,10 @@ class _Dev_mainState extends State<Dev_main> {
                       ListTile(
                         leading: Icon(
                           Icons.circle,
-                          color: Colors.green,
+                          color: Colors.yellow[700],
                         ),
                         title: Text(
-                          'G.M. Road Construction',
+                          'Future Projects',
                           textScaleFactor: 1.5,
                         ),
 
@@ -79,40 +80,10 @@ class _Dev_mainState extends State<Dev_main> {
                       ListTile(
                         leading: Icon(
                           Icons.circle,
-                          color: Colors.red,
-                        ),
-                        title: Text(
-                          'Rajan Road Construction',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
                           color: Colors.green,
                         ),
                         title: Text(
-                          'Raja Road Construction',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
-                          color: Colors.yellow,
-                        ),
-                        title: Text(
-                          'Raja Road Construction',
+                          'On-Going Projects',
                           textScaleFactor: 1.5,
                         ),
                         onTap: () {
@@ -127,67 +98,22 @@ class _Dev_mainState extends State<Dev_main> {
                           color: Colors.red,
                         ),
                         title: Text(
-                          'Raja Road Construction',
+                          'Awaited Projects',
                           textScaleFactor: 1.5,
                         ),
                         onTap: () {
                           setState(() {
-                            print("2");
+                            print("3");
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
+                          Icons.feedback,
+                          color: Colors.black,
                         ),
                         title: Text(
-                          'Raja Road Construction',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
-                        ),
-                        title: Text(
-                          'Raja Road Construction',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
-                        ),
-                        title: Text(
-                          'Raja Road Construction',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
-                        ),
-                        title: Text(
-                          'Raja Road Construction',
+                          'Public Feedback',
                           textScaleFactor: 1.5,
                         ),
                         onTap: () {
