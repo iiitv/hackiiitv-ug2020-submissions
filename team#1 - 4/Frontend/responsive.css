@@ -1,0 +1,77 @@
+@media screen and (max-width:900px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .welcomeimg{
+        height: 65vw;
+    }
+   
+    .headingcontainer{
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .headingcontainer .heading{
+        width: 30vw;
+        font-family: 'Merienda', cursive;
+        color:white;
+        font-size: calc(1.3rem + 0.8vw);
+        letter-spacing: 0.8vw;
+    }
+    .wboxuser{
+        overflow: hidden;
+        font-size: calc(0.7rem + 0.5vw);
+        width: 40vw;
+  left: calc(5rem + 18vw);
+
+    }
+    #perinfo img{
+        position: absolute;
+        border-radius: 40px;
+        left: 75%;
+        top: 24%;
+    }
+    .sec1{
+    height: calc(32rem + 4vw);
+    margin: 0px;
+        border: 2px solid black;
+    }
+   
+
+    .welcomeimg{
+        height: 550px;   
+    }
+    .wbox{
+        top: 300px;
+        font-size: calc(1.2rem + 0.5vw);
+        width: 70vw;
+    }
+   
+    
+    footer{
+        /* text-align: center; */
+        top: 0px;
+        height: 22vw;
+        width: 100%;
+    }
+    .socialbtn i{
+        position: relative;
+        left: 38vw;
+        bottom: 1vh;
+        color: white;
+        font-size: calc(1.2rem + 0.5vw);
+    }
+   
+    
+      .wrapp{
+        position: relative;
+        max-width: 350px;
+        top: 50%;
+        height: 50px;
+        margin: 4px auto;
+    }
+}
+      

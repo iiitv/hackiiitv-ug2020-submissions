@@ -1,0 +1,62 @@
+@media screen and (max-width:450px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .headingcontainer .heading{
+        font-family: 'Merienda', cursive;
+        color:white;
+        text-align: center;
+        width: 60%;
+        font-size: calc(1.5rem + 0.8vw);
+        letter-spacing: 0.8vw;
+    }
+   
+    .abovenav button{
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        left: 86%;
+        top: 25%;
+        border-radius: 8px;
+        background: linear-gradient(140deg, rgb(42, 186, 211) 15%,rgb(115, 180, 255) 50%, rgb(0, 102, 255) 80%);
+        border-color: white;
+        font-size: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    #perinfo img{
+        width: 35px;
+    }
+    
+    .sec1{
+        height: 450px;
+    }
+    .restraunts{
+        height: calc(80rem - 0.5vw);
+      }
+   
+.wbox{
+    font-size: calc(0.8rem + 0.5vw);
+    width: 70vw;
+}
+.wrapp{
+    /* border: 2px solid black; */
+ position: absolute;
+ top: calc(23rem + 3vh);
+ left: 14%;
+ transform: scale(50%, 50%);
+}
+
+.wrapp li{
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px 5px;
+}
+}
