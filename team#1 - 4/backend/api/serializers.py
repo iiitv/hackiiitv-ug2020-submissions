@@ -1,11 +1,23 @@
+
 from rest_framework import serializers
+
+
+class DocRegisterSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    name = serializers.CharField(max_length=100)
+    password = serializers.CharField(max_length=100)
+    aadhaar_number = serializers.IntegerField()
+    latitude = serializers.CharField()
+    longitude = serializers.CharField()
+    ph = serializers.CharField(max_length=10)
+    doc = serializers.FileField(required=False)
 
 
 class PatientRegisterSerializer(serializers.Serializer):
     email = serializers.EmailField()
     name = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100)
-    aadhaar_number = serializers.IntegerField()
+    aadhaar_number = serializers.RegexField(r'^\d{12}$')
 
 
 class LoginSerializer(serializers.Serializer):
@@ -28,5 +40,5 @@ class ImageSerializer(serializers.RelatedField):
 
 class AddQueue(serializers.Serializer):
     doc_id = serializers.CharField()
-    day = serializers.CharField(max_length=3)
-    prev_reports = ImageSerializer(many=True, required=False)
+    slot = serializers.CharField(max_length=3)
+    # prev_reports = ImageSerializer(many=True, required=False)
