@@ -10,6 +10,7 @@
         align-items: flex-start;
         .tag-container{
             width: 69%;
+            padding-left: 50px;
             h2{
                 font-size: 48px;
                 font-weight: 900;
@@ -21,6 +22,7 @@
         }
     }
     .register-container{
+        padding-left: 40px;
         display: inline-block;
         .to-register{
             text-decoration: none;
