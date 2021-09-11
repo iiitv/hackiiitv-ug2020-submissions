@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd",
+    "mappings": "AAAA,AAAA,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ",
     "sources": [
         "Covid.scss"
     ],
