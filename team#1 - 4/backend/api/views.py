@@ -1,5 +1,6 @@
 
 from django.contrib.auth import logout as django_logout, login as django_login, authenticate
+from django.core.files.uploadedfile import InMemoryUploadedFile
 
 from rest_framework import status
 from rest_framework.request import Request
@@ -7,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from account.models import User
-from doctor.models import Doctor
+from doctor.models import Doctor, Degree
 from patient.models import Patient
 
 from .serializers import PatientRegisterSerializer, DocRegisterSerializer, LoginSerializer
@@ -61,13 +62,23 @@ def doctor_registration(request: Request):
         errors.update({'error_code': 4})
         return Response(errors, status=status.HTTP_400_BAD_REQUEST)
 
-    data = data.data
+    _data = data.data
 
-    user: User = User.objects.create_user(email=data.get('email'), password=data.get('password'),
-                                          username=data.get('aadhaar_number'), name=data.get('name'))
-    Doctor.objects.create(user=user)
+    _users1 = User.objects.filter(username=_data.get('aadhaar_number'))
+    _users2 = User.objects.filter(email=_data.get('email'))
+    if _users1.exists() or _users2.exists():
+        return Response(UserAlreadyExist(error_code=9, msg='User Already exist', goto='/login'),
+                        status=status.HTTP_400_BAD_REQUEST)
+
+    user: User = User.objects.create_user(email=_data.get('email'), password=_data.get('password'),
+                                          username=_data.get('aadhaar_number'), name=_data.get('name'))
+    doc = Doctor.objects.create(user=user, latitude=float(_data.get('latitude')), longitude=float(_data.get('longitude')))
+    print(data)
+    if image := request.data.get('upload'):
+        image: InMemoryUploadedFile
+        Degree.objects.create(doc=doc, file=image)
+
     Patient.objects.create(user=user)
-
     django_login(request, user)
 
     return Response(RegistrationSuccess(goto='/doctor'))
