@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Covid from "./Components/Covid/Covid"
 import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
+import Map from "./Components/Map/Map";
 import "./App.css";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Route exact path="/"><Home /></Route>
-        <Route exact path="/nearestHosp"></Route>
+        <Route exact path="/nearestHosp"><Map /></Route>
         <Route exact path="/sos"></Route>
         <Route exact path="/login"><Signin /></Route>
         <Route exact path="/register"><Signup /></Route>
