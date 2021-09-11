@@ -1,0 +1,117 @@
+.signin-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: linear-gradient(-120deg, #458FF6, #fff);
+}
+
+.signin-container .signin-wrapper {
+  width: 75%;
+  background: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 15% 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.signin-container .signin-wrapper .signin {
+  width: 100%;
+}
+
+.signin-container .signin-wrapper .signin .signin-title {
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.signin-container .signin-wrapper .signin .signin-input-wrapper {
+  margin-bottom: 10px;
+}
+
+.signin-container .signin-wrapper .signin .signin-input-wrapper .signin-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 68px;
+  outline: none;
+  border: none;
+}
+
+.signin-container .signin-wrapper .signin .signin-btn-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.signin-container .signin-wrapper .signin .signin-btn-wrapper .signin-btn {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #458FF6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.signin-container .signin-wrapper .signin .signin-link {
+  padding-top: 10px;
+}
+/*# sourceMappingURL=Signin.css.map */
