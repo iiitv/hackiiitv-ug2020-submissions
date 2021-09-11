@@ -1,7 +1,7 @@
 .signin-container {
   box-sizing: border-box;
   width: 100%;
-  min-height: 100vh;
+  min-height: 84.5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 100px 15% 100px;
+    padding: 30px 15% 30px;
     box-sizing: border-box;
 
     .signin {
@@ -27,11 +27,11 @@
         font-weight: 700;
         box-sizing: border-box;
         display: block;
-        font-size: 24px;
+        font-size: 32px;
         color: #333;
         text-align: center;
         width: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
       }
 
       .signin-input-wrapper {
