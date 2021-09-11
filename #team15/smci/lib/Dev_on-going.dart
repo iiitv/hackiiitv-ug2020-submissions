@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Dev_main extends StatefulWidget {
-  const Dev_main({Key? key}) : super(key: key);
+class Dev_ongoing extends StatefulWidget {
+  const Dev_ongoing({Key? key}) : super(key: key);
 
   @override
-  _Dev_mainState createState() => _Dev_mainState();
+  _Dev_ongoingState createState() => _Dev_ongoingState();
 }
 
-class _Dev_mainState extends State<Dev_main> {
+class _Dev_ongoingState extends State<Dev_ongoing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Development Around You",
+          child: Text("On-Going Projects",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -24,7 +24,7 @@ class _Dev_mainState extends State<Dev_main> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      // drawer: Drawer(),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(
@@ -60,17 +60,15 @@ class _Dev_mainState extends State<Dev_main> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.yellow[700],
+                          Icons.location_city,
+                          size: 40,
+                          // color: Colors.yellow[700],
                         ),
                         title: Text(
-                          'Future Projects',
-                          textScaleFactor: 1.5,
+                          'Prashasan Bhawan Reconstruction',
+                          textScaleFactor: 1.2,
                         ),
-
-                        // trailing: Icon(Icons.done),
-                        // subtitle: Text('This is subtitle'),
-                        // selected: true,
+                        subtitle: Text('location 1'),
                         onTap: () {
                           setState(() {
                             print("1");
@@ -79,30 +77,32 @@ class _Dev_mainState extends State<Dev_main> {
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.green,
+                          Icons.add_road,
+                          size: 40,
+                          // color: Colors.green,
                         ),
                         title: Text(
-                          'On-Going Projects',
-                          textScaleFactor: 1.5,
+                          'Road_name',
+                          textScaleFactor: 1.2,
                         ),
+                        subtitle: Text('location 2'),
                         onTap: () {
                           setState(() {
                             print("2");
-                            Navigator.pushNamed(
-                                context, '/DevelopmentPage_ongoing');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
+                          Icons.railway_alert_rounded,
+                          // color: Colors.red,
+                          size: 40,
                         ),
                         title: Text(
-                          'Awaited Projects',
-                          textScaleFactor: 1.5,
+                          'Railway_related query',
+                          textScaleFactor: 1.2,
                         ),
+                        subtitle: Text('location 3'),
                         onTap: () {
                           setState(() {
                             print("3");
@@ -111,13 +111,15 @@ class _Dev_mainState extends State<Dev_main> {
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.feedback,
-                          color: Colors.black,
+                          Icons.tungsten_outlined,
+                          size: 40,
+                          // color: Colors.black,
                         ),
                         title: Text(
-                          'Public Feedback',
-                          textScaleFactor: 1.5,
+                          'Electric Line work',
+                          textScaleFactor: 1.2,
                         ),
+                        subtitle: Text('location 4'),
                         onTap: () {
                           setState(() {
                             print("2");

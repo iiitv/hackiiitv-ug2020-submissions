@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:smci/Dev_on-going.dart';
 import 'package:smci/Development_around.dart';
 import 'package:smci/login.dart';
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/LoginPage": (context) => Login(),
         "/DevelopmentPage": (context) => Dev_main(),
+        "/DevelopmentPage_ongoing": (context) => Dev_ongoing(),
       },
       // home: Login(),
       home: Dev_main(),
