@@ -15,7 +15,7 @@ use current keyword in google news feed
                                                                                     
 - facts of renewable energy
 
- @#solar e - 
+ #solar e - 
 Fact 1: The earth gets 174 Petawatts of incoming solar radiation in the upper atmosphere. About 30% is reflected back to space, and the rest is absorbed by oceans, clouds and landmasses.
 Fact 2: Solar technology can be distinguished into active and passive. Photovoltaic panels and solar thermal collectors which harness solar energy are examples of active solar technology. Passive technology includes constructing rooms to improve air circulation, orienting space to use sunlight favorably.
 Fact 3: 7. Solar energy is the cheapest source of energy in the world as of 2017. Solar energy is cheaper than fossil fuels as of 2019.
