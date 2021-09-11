@@ -6,6 +6,7 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
+import Navbar from "../Navbar/Navbar";
 
 mapboxgl.accessToken =
   "pk.eyJ1Ijoia2FsYXNoMDQiLCJhIjoiY2t0Zmw0c2QzMDJ1ZTJxcGFsYWYyZWUybyJ9.cfa49VGoH3OghB0LM4piew";
@@ -30,10 +31,13 @@ class Map extends React.Component {
 
   render() {
     return (
+      <React.Fragment>
+      <Navbar />
       <div
         ref={(element) => (this.mapWrapper = element)}
         className="map-wrapper"
       />
+      </React.Fragment>
     );
   }
 }
