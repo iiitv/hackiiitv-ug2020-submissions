@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:smci/Development_page/Dev_Await/Dev_Await.dart';
+import 'package:smci/Development_page/Dev_Await/Dev_Await_detail1.dart';
+import 'package:smci/Development_page/Dev_Await/Dev_Await_detail2.dart';
 import 'package:smci/Development_page/Dev_Future/Dev_Future.dart';
 import 'package:smci/Development_page/Dev_Future/Dev_Future_detail1.dart';
 import 'package:smci/Development_page/Dev_Future/Dev_Future_detail2.dart';
@@ -51,6 +54,9 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_Future_detail_2": (context) => Dev_FutureDetail2(),
         "/DevelopmentPage_Future_detail_3": (context) => Dev_FutureDetail3(),
         "/DevelopmentPage_Future_detail_4": (context) => Dev_FutureDetail4(),
+        "/DevelopmentPage_Await": (context) => Dev_Await(),
+        "/DevelopmentPage_Await_detail_1": (context) => Dev_AwaitDetail1(),
+        "/DevelopmentPage_Await_detail_2": (context) => Dev_AwaitDetail2(),
       },
       // home: Login(),
       home: Dev_main(),

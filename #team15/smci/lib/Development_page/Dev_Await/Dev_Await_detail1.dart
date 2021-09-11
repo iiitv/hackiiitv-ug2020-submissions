@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Dev_FutureDetail1 extends StatefulWidget {
-  const Dev_FutureDetail1({Key? key}) : super(key: key);
+class Dev_AwaitDetail1 extends StatefulWidget {
+  const Dev_AwaitDetail1({Key? key}) : super(key: key);
 
   @override
-  _Dev_FutureDetail1State createState() => _Dev_FutureDetail1State();
+  _Dev_AwaitDetail1State createState() => _Dev_AwaitDetail1State();
 }
 
-class _Dev_FutureDetail1State extends State<Dev_FutureDetail1> {
+class _Dev_AwaitDetail1State extends State<Dev_AwaitDetail1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Future Projects",
+          child: Text("Awaited Projects",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -72,10 +72,7 @@ class _Dev_FutureDetail1State extends State<Dev_FutureDetail1> {
                           '''                          
 Location 1
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Reason : 
                         ''',
                           textScaleFactor: 1.2,
                         ),

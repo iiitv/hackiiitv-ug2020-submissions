@@ -14,7 +14,7 @@ class _Dev_FutureDetail3State extends State<Dev_FutureDetail3> {
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("On-Going Projects",
+          child: Text("Future Projects",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,

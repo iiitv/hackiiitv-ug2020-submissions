@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Dev_main extends StatefulWidget {
-  const Dev_main({Key? key}) : super(key: key);
+class Dev_Await extends StatefulWidget {
+  const Dev_Await({Key? key}) : super(key: key);
 
   @override
-  _Dev_mainState createState() => _Dev_mainState();
+  _Dev_AwaitState createState() => _Dev_AwaitState();
 }
 
-class _Dev_mainState extends State<Dev_main> {
+class _Dev_AwaitState extends State<Dev_Await> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Development Around You",
+          child: Text("Awaited Projects",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -24,7 +24,7 @@ class _Dev_mainState extends State<Dev_main> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      // drawer: Drawer(),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(
@@ -60,74 +60,80 @@ class _Dev_mainState extends State<Dev_main> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.yellow[700],
+                          Icons.location_city,
+                          size: 40,
+                          // color: Colors.yellow[700],
                         ),
                         title: Text(
-                          'Future Projects',
-                          textScaleFactor: 1.5,
+                          'Prashasan Bhawan Reconstruction',
+                          textScaleFactor: 1.2,
                         ),
-
-                        // trailing: Icon(Icons.done),
-                        // subtitle: Text('This is subtitle'),
-                        // selected: true,
+                        subtitle: Text('location 1'),
                         onTap: () {
                           setState(() {
                             print("1");
                             Navigator.pushNamed(
-                                context, '/DevelopmentPage_Future');
+                                context, '/DevelopmentPage_Await_detail_1');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.circle,
-                          color: Colors.green,
+                          Icons.add_road,
+                          size: 40,
+                          // color: Colors.green,
                         ),
                         title: Text(
-                          'On-Going Projects',
-                          textScaleFactor: 1.5,
+                          'Road_name',
+                          textScaleFactor: 1.2,
                         ),
+                        subtitle: Text('location 2'),
                         onTap: () {
                           setState(() {
                             print("2");
                             Navigator.pushNamed(
-                                context, '/DevelopmentPage_ongoing');
+                                context, '/DevelopmentPage_Await_detail_2');
                           });
                         },
                       ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.circle,
-                          color: Colors.red,
-                        ),
-                        title: Text(
-                          'Awaited Projects',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("3");
-                            Navigator.pushNamed(
-                                context, '/DevelopmentPage_Await');
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.feedback,
-                          color: Colors.black,
-                        ),
-                        title: Text(
-                          'Public Feedback',
-                          textScaleFactor: 1.5,
-                        ),
-                        onTap: () {
-                          setState(() {
-                            print("2");
-                          });
-                        },
-                      ),
+                      // ListTile(
+                      //   leading: Icon(
+                      //     Icons.railway_alert_rounded,
+                      //     // color: Colors.red,
+                      //     size: 40,
+                      //   ),
+                      //   title: Text(
+                      //     'Railway_related query',
+                      //     textScaleFactor: 1.2,
+                      //   ),
+                      //   subtitle: Text('location 3'),
+                      //   onTap: () {
+                      //     setState(() {
+                      //       print("3");
+                      //       Navigator.pushNamed(
+                      //           context, '/DevelopmentPage_Future_detail_3');
+                      //     });
+                      //   },
+                      // ),
+                      // ListTile(
+                      //   leading: Icon(
+                      //     Icons.tungsten_outlined,
+                      //     size: 40,
+                      //     // color: Colors.black,
+                      //   ),
+                      //   title: Text(
+                      //     'Electric Line work',
+                      //     textScaleFactor: 1.2,
+                      //   ),
+                      //   subtitle: Text('location 4'),
+                      //   onTap: () {
+                      //     setState(() {
+                      //       print("4");
+                      //       Navigator.pushNamed(
+                      //           context, '/DevelopmentPage_Future_detail_4');
+                      //     });
+                      //   },
+                      // ),
                     ],
                   ),
                 ),
