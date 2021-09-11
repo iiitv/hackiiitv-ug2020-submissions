@@ -1,15 +1,33 @@
 .navbar{
     display: flex;
+    justify-content: space-around;
+    font-family: 'Mulish', sans-serif;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
     .nav-link{
         text-decoration: none;
+        color: black;
     }
     .logo{
         display: flex;
+        align-items: center;
         img{
             width: 68px;
+        }
+        h1{
+            font-size: 24px;
+            padding-left: 10px;
         }
     }
     .navitems{
         display: flex;
+        align-items: center;
+        width: 50vw;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 400;
+        .sos{
+            color: red;
+        }
     }
 }

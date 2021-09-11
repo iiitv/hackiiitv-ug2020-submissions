@@ -2,25 +2,53 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Mulish', sans-serif;
+  padding: 20px 0 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .navbar .nav-link {
   text-decoration: none;
+  color: black;
 }
 
 .navbar .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .logo img {
   width: 68px;
 }
 
+.navbar .logo h1 {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
 .navbar .navitems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar .navitems .sos {
+  color: red;
 }
 /*# sourceMappingURL=Navbar.css.map */
