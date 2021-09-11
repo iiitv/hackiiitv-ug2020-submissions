@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!n$bj$8p7s3z-9n^$n6pv$*2*#07^)7m79wm*9bi1f)&#&$g!v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = '*'
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,9 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'knox',
-    'userapi'
+    'med',
 ]
-AUTH_USER_MODEL = 'userapi.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
