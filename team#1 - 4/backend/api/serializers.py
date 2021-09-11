@@ -18,6 +18,7 @@ class PatientRegisterSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=100)
     password = serializers.CharField(max_length=100)
     aadhaar_number = serializers.RegexField(r'^\d{12}$')
+    ph = serializers.RegexField(r'^\d{10}$')
 
 
 class LoginSerializer(serializers.Serializer):

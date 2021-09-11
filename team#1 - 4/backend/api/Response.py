@@ -1,10 +1,21 @@
-from typing import TypedDict
+from typing import TypedDict, Union
 
 
 class AlreadyLogin(TypedDict):
     error_code: int
     msg: str
     goto: str
+
+
+class LoginReqResponse(TypedDict):
+    error_code: int
+    msg: str
+    goto: str
+
+
+class MeResponse(TypedDict):
+    logged_in: bool
+    name: Union[str, None]
 
 
 class UserAlreadyExist(TypedDict):

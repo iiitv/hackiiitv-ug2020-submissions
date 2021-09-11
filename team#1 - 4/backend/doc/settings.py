@@ -25,21 +25,26 @@ SECRET_KEY = 'django-insecure-^jiwg$59(^snb+h2!qy=#f#$%o$x1-+!iul)^g4784!%c_1%*3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_COOKIE_DOMAIN = 'http://localhost:3000'
+CSRF_TRUSTED_ORIGINS = ['thetgnteam.com', 'hackiiitv.thetgnteam.com', 'localhost']
+
+# CSRF_COOKIE_DOMAIN = 'localhost'
 CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5501',
     'http://localhost:5000',
     'http://localhost:3000',
+    'http://localhost',
     'http://localhost:3001',
     'http://127.0.0.1:8000'
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
-ALLOWED_HOSTS = ['api.benlotus.com', '127.0.0.1']
+ALLOWED_HOSTS = ['api.benlotus.com', '127.0.0.1', 'hackiiitv.thetgnteam.com']
 
 AUTH_USER_MODEL = 'account.User'
 # Application definition
