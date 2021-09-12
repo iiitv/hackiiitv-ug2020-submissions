@@ -65,13 +65,13 @@ class _Dev_AwaitDetail2State extends State<Dev_AwaitDetail2> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'NH-64',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 2
+Gujrat
 
-Reason : 
+Reason : Company left the work
                         '''),
                         onTap: () {
                           setState(() {});

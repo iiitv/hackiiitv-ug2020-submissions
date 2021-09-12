@@ -65,16 +65,15 @@ class _Dev_FutureDetail3State extends State<Dev_FutureDetail3> {
                           size: 40,
                         ),
                         title: Text(
-                          'Railway_related query',
+                          'Vadodar-Surat Zone',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 3
+Vadodara
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : Devangiri pvt. Ltd.
+Budget : 1231 Crores
+Expected Date : 01/06/2022
                         '''),
                         onTap: () {
                           setState(() {});

@@ -68,7 +68,7 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                           'Prashasan Bhawan Reconstruction',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 1'),
+                        subtitle: Text('Heera Road, Vadodara'),
                         onTap: () {
                           setState(() {
                             print("1");
@@ -84,10 +84,10 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'Benjamin chowk Road',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 2'),
+                        subtitle: Text('Nantola, Vadodara'),
                         onTap: () {
                           setState(() {
                             print("2");
@@ -103,10 +103,10 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                           size: 40,
                         ),
                         title: Text(
-                          'Railway_related query',
+                          'Baruch Halt',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 3'),
+                        subtitle: Text('Baruch, Gujrat'),
                         onTap: () {
                           setState(() {
                             print("3");
@@ -125,7 +125,7 @@ class _Dev_ongoingState extends State<Dev_ongoing> {
                           'Electric Line work',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 4'),
+                        subtitle: Text('Valsad, Gujrat'),
                         onTap: () {
                           setState(() {
                             print("4");

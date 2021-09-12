@@ -65,10 +65,10 @@ class _Dev_FutureState extends State<Dev_Future> {
                           // color: Colors.yellow[700],
                         ),
                         title: Text(
-                          'Prashasan Bhawan Reconstruction',
+                          'IIIT-V Campus Construction',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 1'),
+                        subtitle: Text('Vadodara'),
                         onTap: () {
                           setState(() {
                             print("1");
@@ -84,10 +84,10 @@ class _Dev_FutureState extends State<Dev_Future> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'Jalan Road Reconstruction',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 2'),
+                        subtitle: Text('Jalan Road, Vadodara'),
                         onTap: () {
                           setState(() {
                             print("2");
@@ -103,10 +103,10 @@ class _Dev_FutureState extends State<Dev_Future> {
                           size: 40,
                         ),
                         title: Text(
-                          'Railway_related query',
+                          'Vadodar-Surat Zone',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 3'),
+                        subtitle: Text('Vadodara'),
                         onTap: () {
                           setState(() {
                             print("3");
@@ -122,10 +122,10 @@ class _Dev_FutureState extends State<Dev_Future> {
                           // color: Colors.black,
                         ),
                         title: Text(
-                          'Electric Line work',
+                          'Meena Mall',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 4'),
+                        subtitle: Text('Lajpat Rai road, Vadodara'),
                         onTap: () {
                           setState(() {
                             print("4");

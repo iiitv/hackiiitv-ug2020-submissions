@@ -65,16 +65,15 @@ class _Dev_FutureDetail2State extends State<Dev_FutureDetail2> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'Jalan Road Reconstruction',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 2
+Jalan Road, Vadodara
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : Methli-Minali pvt. Ltd.
+Budget : 250 Crores
+Expected Date : 01/12/2021
                         '''),
                         onTap: () {
                           setState(() {});

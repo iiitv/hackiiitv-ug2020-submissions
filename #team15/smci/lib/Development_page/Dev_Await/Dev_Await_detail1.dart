@@ -70,9 +70,9 @@ class _Dev_AwaitDetail1State extends State<Dev_AwaitDetail1> {
                         ),
                         subtitle: Text(
                           '''                          
-Location 1
+Heera Road, Vadodara
 
-Reason : 
+Reason : Unknown
                         ''',
                           textScaleFactor: 1.2,
                         ),

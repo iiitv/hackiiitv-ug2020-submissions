@@ -65,17 +65,16 @@ class _Dev_FutureDetail1State extends State<Dev_FutureDetail1> {
                           // color: Colors.yellow[700],
                         ),
                         title: Text(
-                          'Prashasan Bhawan Reconstruction',
+                          'IIIT-V Campus Construction',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text(
                           '''                          
-Location 1
+Location : Vadodara
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : Sreesth pvt. Ltd.
+Expected Budget : 350 Crores
+Expected Date : Unknown
                         ''',
                           textScaleFactor: 1.2,
                         ),

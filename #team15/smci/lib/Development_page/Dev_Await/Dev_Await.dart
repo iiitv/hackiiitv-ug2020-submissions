@@ -68,7 +68,7 @@ class _Dev_AwaitState extends State<Dev_Await> {
                           'Prashasan Bhawan Reconstruction',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 1'),
+                        subtitle: Text('Heera road, Vadodara'),
                         onTap: () {
                           setState(() {
                             print("1");
@@ -84,10 +84,10 @@ class _Dev_AwaitState extends State<Dev_Await> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'NH-64',
                           textScaleFactor: 1.2,
                         ),
-                        subtitle: Text('location 2'),
+                        subtitle: Text('Gujrat'),
                         onTap: () {
                           setState(() {
                             print("2");

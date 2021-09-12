@@ -65,14 +65,14 @@ class _Dev_ongoingDetail3State extends State<Dev_ongoingDetail3> {
                           size: 40,
                         ),
                         title: Text(
-                          'Railway_related query',
+                          'Baruch Halt',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 3
+Baruch, Gujrat
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
+Tender : Indian Railway
+Budget : 325 Crores
 Starting date : 12/02/2020
 Expected Ending date : 01/01/2021
                         '''),

@@ -65,16 +65,15 @@ class _Dev_FutureDetail4State extends State<Dev_FutureDetail4> {
                           // color: Colors.black,
                         ),
                         title: Text(
-                          'Electric Line work',
+                          'Meena Mall',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 4
+Lajpat Rai road, Vadodara
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : NDLS Pvt. Ltd.
+Budget : 12 Crores
+Expected Date : 25/09/2021
                         '''),
                         onTap: () {
                           setState(() {

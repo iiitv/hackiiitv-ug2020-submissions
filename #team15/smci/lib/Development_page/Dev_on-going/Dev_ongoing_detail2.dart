@@ -65,16 +65,16 @@ class _Dev_ongoingDetail2State extends State<Dev_ongoingDetail2> {
                           // color: Colors.green,
                         ),
                         title: Text(
-                          'Road_name',
+                          'Benjamin chowk Road',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 2
+Nantola, Vadodara
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : Ram Pvt. Ltd.
+Budget : 15 Crores
+Starting date : 12/01/2020
+Expected Ending date : 01/10/2020
                         '''),
                         onTap: () {
                           setState(() {});

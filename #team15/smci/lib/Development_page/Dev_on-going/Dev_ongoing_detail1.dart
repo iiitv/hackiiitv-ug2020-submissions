@@ -70,7 +70,7 @@ class _Dev_ongoingDetail1State extends State<Dev_ongoingDetail1> {
                         ),
                         subtitle: Text(
                           '''                          
-Location 1
+Heera Road, Vadodara
 
 Tender : Ramprakash Pvt. Ltd.
 Budget : 35 Crores

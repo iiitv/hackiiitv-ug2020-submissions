@@ -65,16 +65,16 @@ class _Dev_ongoingDetail4State extends State<Dev_ongoingDetail4> {
                           // color: Colors.black,
                         ),
                         title: Text(
-                          'Electric Line work',
+                          'Fresh electric wiring',
                           textScaleFactor: 1.2,
                         ),
                         subtitle: Text('''                          
-Location 4
+Valsad, Gujrat
 
-Tender : Ramprakash Pvt. Ltd.
-Budget : 35 Crores
-Starting date : 12/02/2020
-Expected Ending date : 01/01/2021
+Tender : Heeralal pvt. Ltd.
+Budget : 5 Crores
+Starting date : 02/09/2020
+Expected Ending date : 01/11/2021
                         '''),
                         onTap: () {
                           setState(() {
