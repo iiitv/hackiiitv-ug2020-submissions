@@ -35,6 +35,7 @@ def customer_signup(request):
 @require_http_methods(["POST"]) 
 def customer_login(request):
     json_data = json.loads(request.body)
+    print(json_data)
     customer = Customer.customer_login(request, json_data['cust_email'])
     response = {
         "cust_id": customer.id,

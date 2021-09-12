@@ -23,6 +23,7 @@ class NameForm extends React.Component {
             },
             body: JSON.stringify(req)
     })
+    window.location.href="/login";
   }
   render() {
     return (
