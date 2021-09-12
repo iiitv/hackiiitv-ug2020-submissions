@@ -1,8 +1,9 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  background-color: green;
 }
+
 
 .nav-item{
   margin-left: 1rem;
@@ -70,10 +71,10 @@ body {
 }
 
 #weoffer a:hover{
-	background-color: #dfdede;
+	background-color: #ACFFAD;
 }
 #useful-links a:hover{
-  background-color: #dfdede;
+  background-color: #ACFFAD;
 }
 
 #connected{
