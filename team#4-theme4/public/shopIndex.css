@@ -284,3 +284,8 @@ button:hover{
 .container{
     margin-top: 50px;
 }
+
+img{
+  height: 300px;
+  width: 400px;
+}
