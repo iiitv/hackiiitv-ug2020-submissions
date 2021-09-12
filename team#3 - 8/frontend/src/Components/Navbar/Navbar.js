@@ -28,8 +28,8 @@ const Navbar = () => {
         <NavLink to="/covid" exact className="nav-link">
           <div>COVID-19</div>
         </NavLink>
-        <NavLink to="/contact" exact className="nav-link">
-          <div>Contact Us</div>
+        <NavLink to="/reportcase" exact className="nav-link">
+          <div>Report a Case</div>
         </NavLink>
         <NavLink to="/login" exact className="nav-link">
           {/* *************** TO be corrected *************** */}

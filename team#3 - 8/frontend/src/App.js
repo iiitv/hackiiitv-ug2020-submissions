@@ -6,6 +6,7 @@ import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
 import Map from "./Components/Map/Map";
 import Navbar from "./Components/Navbar/Navbar";
+import ReportCase from "./Components/ReportCase/ReportCase";
 import "./App.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/login"><Navbar /><Signin /></Route>
         <Route exact path="/register"><Navbar /><Signup /></Route>
         <Route exact path="/covid"><Covid /></Route>
-        <Route exact path="/contact"></Route>
+        <Route exact path="/reportcase"><Navbar /><ReportCase /></Route>
       </Router>
     </div>
   );

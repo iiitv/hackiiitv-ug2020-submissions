@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,AAAA,UAAW,CAAA,CAAC,GAAE,aAAa,AAAA,UAAW,CAAA,CAAC,EAAC;EACjD,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "ReportCase.scss"
+    ],
+    "names": [],
+    "file": "ReportCase.css"
+}
