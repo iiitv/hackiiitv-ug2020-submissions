@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/login"><Navbar /><Signin /></Route>
         <Route exact path="/register"><Navbar /><Signup /></Route>
         <Route exact path="/covid"><Covid /></Route>
-        <Route exact path="/contact"></Route>
+        <Route exact path="/report"></Route>
       </Router>
     </div>
   );
