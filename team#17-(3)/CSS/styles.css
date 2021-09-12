@@ -87,8 +87,8 @@ body {
   margin-left: .75rem;
 }
 
-#weoffer:hover{
-	color: white;
+#weoffer a:hover{
+	color: whitesmoke;
 }
 #useful-links a:hover{
   color:white;
@@ -119,4 +119,12 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+.textColor{
+  color: white;
+  text-decoration: none;
+}
+.textColor:hover{
+  color:whitesmoke
+
 }

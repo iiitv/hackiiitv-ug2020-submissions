@@ -5,7 +5,9 @@
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  
+  .nav-link{
+    color:white
+  }
   .firstbutton{
     margin-right: 1rem;
     margin-left: 1rem;
@@ -28,8 +30,14 @@
       padding: 10px 15px;
       border-radius: 12%;
   }
-  #firstbutton:hover,#secondbutton:hover{
+  .firstbutton:hover,.secondbutton:hover{
     background-color:#adb5bd; 
     color: white;
+    text-decoration: none;
   }
-  
+  .textColor{
+    color: white;
+  }
+  .textColor:hover{
+    color:white;
+  }

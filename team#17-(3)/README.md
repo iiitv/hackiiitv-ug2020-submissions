@@ -1,5 +1,5 @@
 # Project Name: 
-Company Name
+Company Name:AgroBay
 
 # Tagline: 
 
@@ -46,9 +46,9 @@ Farmers can get the status of availability of labour in their area with just a f
 
 # References:
 
-Article 1
+Article 1:
+https://www.livemint.com/opinion/online-views/workers-are-moving-off-indian-farms-but-where-are-they-going-11616603448650.html
 
-Article 2
 
 
 # Technologies we used:
@@ -68,9 +68,6 @@ Pratyush Agrawal
 
 
 
-
-Prat
-aman
-
-
+SLIDES:
+https://docs.google.com/presentation/d/115-pFlK4Ud7mxew7PcSQa-vDjJw17mJ7Ii4AC1ttmoI/edit?usp=sharing
 
