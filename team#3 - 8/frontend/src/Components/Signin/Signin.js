@@ -1,10 +1,15 @@
 import React from "react";
 import "./Signin.css";
 
+const saveData = (event) => {
+  sessionStorage.setItem("cust_email", event.target.email.value);
+}
+
 class SignInForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
+    saveData(event);
     const req = {
       cust_email: event.target.email.value,
       password: event.target.password.value,
