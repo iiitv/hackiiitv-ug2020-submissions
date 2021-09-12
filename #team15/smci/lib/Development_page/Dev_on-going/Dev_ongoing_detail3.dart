@@ -44,7 +44,7 @@ class _Dev_ongoingDetail3State extends State<Dev_ongoingDetail3> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/mumbai_map.jpg"),
+                            image: AssetImage("img/const.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),

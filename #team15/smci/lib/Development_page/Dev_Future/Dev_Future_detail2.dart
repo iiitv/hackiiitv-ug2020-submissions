@@ -44,7 +44,7 @@ class _Dev_FutureDetail2State extends State<Dev_FutureDetail2> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/mumbai_map.jpg"),
+                            image: AssetImage("img/const.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
