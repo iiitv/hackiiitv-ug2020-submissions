@@ -18,7 +18,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import java.util.ArrayList;
+
+
+
 public class Add_Contacts extends AppCompatActivity {
+
+    public static ArrayList contacts_numbers = new ArrayList(3);
+    public static ArrayList contacts_names = new ArrayList(3);
+
 
     private static final String TAG = Add_Contacts.class.getSimpleName();
     private static final int REQUEST_CODE_PICK_CONTACTS = 1;
@@ -205,8 +213,15 @@ public class Add_Contacts extends AppCompatActivity {
     }
 
     public void Done(View view) {
+        contacts_numbers.clear();
+        contacts_names.clear();
+        contacts_names.add((String) contact_name_1.getText());
+        contacts_names.add((String) contact_name_2.getText());
+        contacts_names.add((String) contact_name_3.getText());
 
-
+        contacts_numbers.add((String)contact_number_1.getText());
+        contacts_numbers.add((String)contact_number_2.getText());
+        contacts_numbers.add((String)contact_number_3.getText());
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 }
