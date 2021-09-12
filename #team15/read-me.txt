@@ -1,0 +1,77 @@
+KWIK-EZ
+
+INTRODUCING TO OUR TEAM:
+
+	Team Name: Dopa70-1
+	Team number: #15
+	Team members :
+Yashesh Bhavsar
+			Suraj Kumar
+			Dev Juneja
+			Omkar Bhamare
+
+INTRODUCING TO OUR PROJECT :
+
+	Name of our App: KWIK-EZ
+	Theme of our App: Smart city and Medical services	
+	TechStack Used: Flutter
+
+THE MAIN IDEA OF OUR PROJECT:
+
+	The main intention of our project is to make our daily life work easier and better. For example, you want to visit a mall located nearby your house and it comes to know that the mall is under construction and will remain closed for 2 days. Why does it happen? Do you know? Yes, because of lack of information and that's the idea of our project. Our app provides you with all information like opening/closing time, ticket fare, available services, location, etc of all visiting places around you like mall, bank, hospital, tourist places, etc. Apart from this, you can get services like medical service, online shopping, detailed information of on-going, future or awaited projects of your city and bank services.
+
+As the name suggests KWIK-EZ, our app makes every daily life thing quick and easy it’s users.
+From keeping track of one’s medical health to a complete guide of your city, this app brings all the smart features in a single click.
+
+
+FLOWCHART OF THE APP :
+
+    Login page
+		-Tourist Place 
+			- Map
+			- opening/closing timing
+			- Ticket fare				
+			- Place history
+			- Book cab
+		-City Development Project 
+				- On-Going Projects
+				- Future Projects
+				- Awaited Projects
+				- Public Feedback
+		-Personal
+			-Bank
+				-name
+				-detail
+				-check balance
+				-Branch
+			-Mall
+				-to-do list
+				-buy online
+
+			-Doctor/medical services 
+				- Prescription,
+				- Family Doctor,Recent Visit,
+				- Next Appointment,
+				- Updated Report,
+				- Buy Medicine.
+
+DESCRIPTION OF THE APP :
+	●	First of all when we open the application, you have to sign up with a valid email address or you can continue with google or Facebook.
+	●	After successful login you will able to see the homepage of our application and the following options:
+➢	Development around you:
+	●	Future Projects: It will show you future projects of your city and its detailed information.
+	●	On-Going Projects: It will show you the on-going projects of your city.
+	●	Awaited Projects: It will show you the location of the project and reason to be awaited (if any).
+	●	Public Feedback
+
+➢	Place to visit
+	●	In this section we get suggestions for planning a trip. We can also add places ourselves and plan a trip. Thus, from getting all required information to booking the cab, on a single platform.
+
+➢	Personal
+	●	Health: In this section you are able to see your medical reports, your appointment, your recent visit to doctor, prescription or you can 		order medicine directly from our application and also provide the feature of Emergency call.
+	●	wealth: In this section you will find your bank details.
+	●	Shopping: Make your shopping list and/or order online from 
+		KWIK-EZ.
+
+
+
