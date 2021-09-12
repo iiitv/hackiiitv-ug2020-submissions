@@ -14,11 +14,16 @@
 }
 .dash-img {
     max-width: 300px;
+    border : 1px black solid;
+    margin : 10px 250px;
 }
 .product {
     border: 2px solid black;
     padding: 10px;
     margin: 25px;
+    background-color: #ededed;
+    border-radius: 8px;
+
 }
 .container h1 {
     padding: 0 312px;
