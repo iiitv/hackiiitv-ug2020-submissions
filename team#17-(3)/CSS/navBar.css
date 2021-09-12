@@ -1,0 +1,35 @@
+.bkcg{
+    background-color:#54436B;
+}
+.nav-item{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .firstbutton{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #adb5bd;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid;
+      padding: 10px 15px;
+      border-radius: 12%;
+  }
+  
+  .secondbutton{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    word-wrap: normal;
+    color: #adb5bd;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid;
+      padding: 10px 15px;
+      border-radius: 12%;
+  }
+  #firstbutton:hover,#secondbutton:hover{
+    background-color:#adb5bd; 
+    color: white;
+  }
+  

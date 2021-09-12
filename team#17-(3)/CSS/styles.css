@@ -10,7 +10,7 @@ body {
   margin-right: 1rem;
 }
 
-#firstbutton{
+.firstbutton{
   margin-right: 1rem;
   margin-left: 1rem;
   color: #adb5bd;
@@ -21,7 +21,7 @@ body {
     border-radius: 12%;
 }
 
-#secondbutton{
+.secondbutton{
   padding-left: 1rem;
   padding-right: 1rem;
   word-wrap: normal;

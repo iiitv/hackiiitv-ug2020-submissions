@@ -7,15 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent Farm Equipment</title>
     <!--bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS\equipment.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <style>
+      .bkcg{
+          background-color:#54436B;
+      }
+      .footerbckg{
+          background-color:#50CB93;
+      }
+      
+  </style>
+  <link rel="stylesheet" href="CSS\navBar.css">
+
 
 <body>
     <!-- Navigation bar -->
+     <!-- Navigation Bar -->
+
+     <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bkcg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">AgroBay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="enterprise.html">Enterprises</a>
+                </li>
+                
+                <li class="nav-item">
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="about.html">Guides</a></li>
+                        <li><a class="dropdown-item" href="about.html">Useful Applications</a></li>
+                        <li><a class="dropdown-item" href="about.html">Techniques</a></li>
+                        <li><a class="dropdown-item" href="#weoffer">Contact Us</a></li>
+                      </ul>
+                    </div>
+                </li>
+                
+              </ul>
+              <form class="d-flex" action="login.html">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a class="nav-link firstbutton" href="login.html" >Login</a>
+                <a class="nav-link secondbutton" href="signup.html">Signup</a>
+              </form>
+              
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+  
 
 
     <!-- carousel content container -->
@@ -86,8 +144,7 @@
         </div>
 
         <div id="info" class="container-fluid">
-            <div class="row     display: block;
-            text-align-last: center;">
+            <div class="row">
             <div class=" col col-lg-3 col-md-6 col-sm-1 check">
                 <img src="images\image1.jpg" alt="" srcset="">
             </div>
