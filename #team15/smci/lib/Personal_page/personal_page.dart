@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smci/drawer.dart';
 
 class Personal_page extends StatefulWidget {
   const Personal_page({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _Personal_pageState extends State<Personal_page> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(child: draw()),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(

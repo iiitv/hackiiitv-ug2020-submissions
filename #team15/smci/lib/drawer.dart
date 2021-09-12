@@ -8,7 +8,7 @@ draw() {
         height: 300,
         child: DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.orange[400],
+              color: Colors.orange,
             ),
             child: Container(
               height: 2.0,
@@ -29,15 +29,16 @@ draw() {
       ListTile(
         leading: Builder(builder: (BuildContext context) {
           return IconButton(
-            icon: const Icon(Icons.person_outlined),
+            icon: const Icon(Icons.construction),
             onPressed: () {},
           );
         }),
         title: const Text(
-          "Profile",
+          "Development",
           textScaleFactor: 1.5,
         ),
-        subtitle: Text("Profile detail"),
+        subtitle: Text('''Future, On-going,
+Awaited Projects'''),
         onTap: () {
           // Navigator.pop(context);
           // Navigator.pop(context);
@@ -46,22 +47,43 @@ draw() {
       ListTile(
         leading: Builder(builder: (BuildContext context) {
           return IconButton(
-            icon: const Icon(Icons.filter_alt),
+            icon: const Icon(Icons.place),
             onPressed: () {},
           );
         }),
         title: const Text(
-          "Filter",
+          "Places Nearby",
           textScaleFactor: 1.5,
         ),
-        subtitle: Text("Filter your feed"),
+        subtitle: Text("Most visited places"),
+        onTap: () {
+          // Navigator.pushNamed(context, '/Filter');
+        },
+      ),
+      ListTile(
+        leading: Builder(builder: (BuildContext context) {
+          return IconButton(
+            icon: const Icon(Icons.person),
+            onPressed: () {},
+          );
+        }),
+        title: const Text(
+          "Personal",
+          textScaleFactor: 1.5,
+        ),
+        subtitle: Text('''Health, Wealth,
+Shopping'''),
         onTap: () {
           // Navigator.pushNamed(context, '/Filter');
         },
       ),
       Divider(),
       ListTile(
-        title: const Text("Version : 1.0.1\nContact : @Suraj || @Dev"),
+        title: const Text('''Version : 1.0.1
+Contact :  @Suraj
+                  @Dev
+                  @Yashesh
+                  @Omkar'''),
         onTap: () {},
       ),
     ],

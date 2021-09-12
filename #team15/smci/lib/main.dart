@@ -1,5 +1,4 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:smci/Development_page/Dev_Await/Dev_Await.dart';
@@ -49,6 +48,7 @@ class MyApp extends StatelessWidget {
               ],
               // background: Container(color: Color(0xFFF5F5F5))
             ),
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.orange,
         ),
@@ -92,12 +92,12 @@ class MyApp extends StatelessWidget {
             duration: 1000,
             // splash: Icons.person,
             splash: Image.asset(
-              "img/ic.jpeg",
+              "img/logo1.jpeg",
             ),
             nextScreen: Login(),
             splashTransition: SplashTransition.fadeTransition,
             // pageTransitionType: PageTransitionType.rightToLeft,
-            backgroundColor: Colors.orange)
+            backgroundColor: Colors.orange.shade400)
         // home: AnimatedSplashScreen.withScreenFunction(
         //   curve: Curves.easeInCirc,
         //   splash: 'img/ic.jpeg',
