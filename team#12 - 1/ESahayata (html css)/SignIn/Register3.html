@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width">
+	<meta name="author" content="Janmay Joshi">
+	<title>E Gorvernance Website</title>
+	<link rel="stylesheet" type="text/css" href="SignIn/Register3.css">
+</head>
+
+<body>
+	<h1>Register</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<input type="checkbox" id="Agree" name="Agree" required>
+	<label for="vehicle1">By clicking the following button I agree to all the terms and conditions.</label><br>
+
+
+<form id="DemoForm" action="https://www.SnapHost.com/captcha/send.aspx" method="post" target="_top">
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="DEMO12345678">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="support[[]]snaphost.com">
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://www.snaphost.com/captcha/ThankYou.aspx?isSent=success">
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Subject test">
+
+<table border="0" cellpadding="5" cellspacing="0">
+<tbody><tr>
+    <td colspan="2" align="center">  </td>
+</tr>
+
+</tbody></table>
+<br>
+
+<table cellspacing="0" border="0" cellpadding="8">
+<tbody><tr>
+    
+</tr>
+<tr style="background-color:#ffcc66; vertical-align:bottom;">
+    <td>
+        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px;height:48px;font-size:38px;" maxlength="6"><br>
+        <i>Enter web form code</i>
+    </td>
+    <td>
+        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br>
+        <a href="https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"><img id="CaptchaImage" alt="Web Form Code" style="border-width:0px;" src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=DEMO12345678"></a>
+        <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
+            function ReloadCaptchaImage(captchaImageId) {
+                var obj = document.getElementById(captchaImageId);
+                var src = '' + obj.src;
+                obj.src = '';
+                var date = new Date();
+                var pos = src.indexOf('&rad=');
+                if (pos >= 0) { src = src.substr(0, pos); }
+                obj.src = src + '&rad=' + date.getTime();
+                return false;
+            }
+        </script>
+    </td>
+</tr>
+</tbody></table>
+
+<br><br>
+
+<input id="skip_DemoSubmit" name="skip_DemoSubmit" type="submit" value="Submit">
+    
+<br>
+
+</body>	
