@@ -4,7 +4,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
-
+/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -24,7 +24,7 @@ hr {
   margin-bottom: 25px;
 }
 
-
+/* Set a style for all buttons */
 button {
   background-color: #04AA6D;
   color: white;
@@ -40,31 +40,31 @@ button:hover {
   opacity:1;
 }
 
-
+/* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
 
-
+/* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .loginbtn {
   float: left;
   width: 50%;
 }
 
-
+/* Add padding to container elements */
 .container {
   padding: 16px;
 }
 
-
+/* Clear floats */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-
+/* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
   .cancelbtn, .loginbtn {
      width: 100%;
@@ -73,12 +73,22 @@ button:hover {
 h1{
     text-align: center;
 }
-p{
-
+.bbox{
+  width: 50%;
+  margin:auto;
+  
+}
+body{
+  background-color: #50CB93;
+}
+.container{
+  background-color: #ACFFAD;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 </style>
 <body>
-
+<div class="bbox">
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Login</h1>
@@ -106,6 +116,6 @@ p{
     </div>
   </div>
 </form>
-
+</div>
 </body>
 </html>
