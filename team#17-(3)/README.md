@@ -69,8 +69,6 @@ Pratyush Agrawal
 
 
 
-Prat
-aman
 
 
 
