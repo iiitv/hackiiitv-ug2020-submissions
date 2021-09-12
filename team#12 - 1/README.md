@@ -41,7 +41,9 @@ A single interface will be dealing with online certificate generation along with
 
 ## Screenshots
 
+![1_iphone12progold_portrait](https://github.com/aaryanajaysharma/hackiiitv-ug2020-submissions/blob/d44d7b5e269cac35c70a294f99242320f56f356a/team%2312%20-%201/Screenshots/1_iphone12progold_portrait.png)
 
+![1_iphone12progold_landscape](https://github.com/aaryanajaysharma/hackiiitv-ug2020-submissions/blob/d44d7b5e269cac35c70a294f99242320f56f356a/team%2312%20-%201/Screenshots/1_iphone12progold_landscape.png)
 
 ## Authors
 
