@@ -85,6 +85,13 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <ol>
+                                                            <li class = "text-light display-6">
+                                                                <% for(let u of userDetails){ %> 
+                                                                    <% if(w.userId === u.id) {%>
+                                                                        Name: <%= u.username %> 
+                                                                    <% } %> 
+                                                                <% } %> 
+                                                            </li>
                                                             <li class="text-light display-6">
                                                                 Address: <%= w.address %>
                                                             </li>

@@ -99,7 +99,7 @@ app.get('/signup/worker', (req,res)=>{
 app.get('/home/workerHomepage/:id', (req,res)=>{
     const {id} = req.params;
     
-    res.render('workerHomepage.ejs', {workerDetails, id, work});
+    res.render('workerHomepage.ejs', {workerDetails, id, work, userDetails});
 })
 
 app.post('/home/loginworker', (req,res)=>{
