@@ -99,7 +99,7 @@ app.get("/auth/google/dashboard",
 
 // * get /login route
 app.get('/login', function (req, res) {
-  res.render('/login');
+  res.render('login');
 });
 
 // * get /register route
