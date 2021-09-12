@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLink to="/" exact className="nav-link">
           <div>Home</div>
         </NavLink>
-        <NavLink to="/nearestHosp" exact className="nav-link">
+        <NavLink to="/nearestHospital" exact className="nav-link">
           <div>Nearest Hospital</div>
         </NavLink>
         <NavLink to="/sos" exact className="nav-link sos">

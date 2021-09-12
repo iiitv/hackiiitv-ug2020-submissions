@@ -1,5 +1,4 @@
 import React from "react";
-import "./ReportCase.css";
 class ReportCase extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
