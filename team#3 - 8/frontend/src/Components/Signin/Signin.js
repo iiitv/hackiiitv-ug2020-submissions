@@ -1,24 +1,29 @@
 import React from "react";
 import "./Signin.css";
 
+const saveData = (event) => {
+  sessionStorage.setItem("cust_email", event.target.email.value);
+}
+
 class SignInForm extends React.Component {
   handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
+    saveData(event);
     const req = {
-      "cust_email": event.target.email.value,
-      "password": event.target.password.value,
-    }
-    fetch('http://localhost:8000/customers/login', {
-            mode: 'no-cors',
-            method: "post",
-            headers: {
-                 "Content-Type": "application/json"
-            },
-            body: JSON.stringify(req)
-    })
-    window.location.href="/";
-  }
+      cust_email: event.target.email.value,
+      password: event.target.password.value,
+    };
+    fetch("http://localhost:8000/customers/login", {
+      mode: "no-cors",
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(req),
+    });
+    window.location.href = "/";
+  };
   render() {
     return (
       <div className="signin-container">
@@ -55,7 +60,5 @@ class SignInForm extends React.Component {
     );
   }
 }
-
-
 
 export default SignInForm;

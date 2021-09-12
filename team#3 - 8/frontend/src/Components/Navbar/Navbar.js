@@ -32,7 +32,6 @@ const Navbar = () => {
           <div>Report a Case</div>
         </NavLink>
         <NavLink to="/login" exact className="nav-link">
-          {/* *************** TO be corrected *************** */}
           <div>Login/Signup</div>
         </NavLink>
       </div>

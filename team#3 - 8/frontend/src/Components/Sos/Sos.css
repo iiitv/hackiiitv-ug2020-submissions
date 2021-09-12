@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=Sos.css.map */
+.sos-wrap {
+  padding-top: 125px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sos-button {
+  min-width: 200px;
+  min-height: 60px;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #ff1e00;
+  background: linear-gradient(125deg, #ce1812 0%, #fcfcfc 100%);
+  border: none;
+  border-radius: 1000px;
+  -webkit-box-shadow: 6px 6px 12px #ce1812;
+          box-shadow: 6px 6px 12px #ce1812;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+button::before {
+  content: "";
+  border-radius: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button:hover,
+.button:focus {
+  color: #313133;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ff1e00;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
+          animation: ring 1.5s infinite;
+}
+
+button:hover::after,
+button:focus::after {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.sos-text {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 350;
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+
+.sos-text .sos-bold {
+  font-weight: 500;
+}
+/*# sourceMappingURL=Sos.css.map */
