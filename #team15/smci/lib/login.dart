@@ -72,7 +72,7 @@ class _LoginState extends State<Login> {
               ),
               FlatButton(
                 onPressed: () {
-                  // Navigator.pushNamed(context, '/ProfilePage');
+                  // Navigator.pushNamed(context, '/Homepage');
                 },
                 child: Text(
                   'Forgot Password',
@@ -83,7 +83,7 @@ class _LoginState extends State<Login> {
                 text: 'Sign in with Email',
                 icon: Icons.email,
                 onPressed: () {
-                  Navigator.pushNamed(context, '/ProfilePage');
+                  Navigator.pushNamed(context, '/Homepage');
                 },
                 backgroundColor: Colors.blueGrey[700]!,
               ),
@@ -91,14 +91,14 @@ class _LoginState extends State<Login> {
                 Buttons.Facebook,
                 // mini: true,
                 onPressed: () {
-                  Navigator.pushNamed(context, '/ProfilePage');
+                  Navigator.pushNamed(context, '/Homepage');
                 },
               ),
               SignInButton(
                 Buttons.Google,
                 // mini: true,
                 onPressed: () {
-                  Navigator.pushNamed(context, '/ProfilePage');
+                  Navigator.pushNamed(context, '/Homepage');
                 },
               ),
             ],

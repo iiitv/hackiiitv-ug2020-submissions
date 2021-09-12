@@ -21,6 +21,8 @@ import 'package:smci/Personal_page/Doctor/Prescription.dart';
 import 'package:smci/Personal_page/Doctor/doctor.dart';
 import 'package:smci/Personal_page/Mall/mall.dart';
 import 'package:smci/Personal_page/Mall/mall_todolist.dart';
+import 'package:smci/Personal_page/personal_page.dart';
+import 'package:smci/home_page.dart';
 import 'package:smci/login.dart';
 
 void main() {
@@ -65,18 +67,21 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_Await_detail_1": (context) => Dev_AwaitDetail1(),
         "/DevelopmentPage_Await_detail_2": (context) => Dev_AwaitDetail2(),
         "/DevelopmentPage_Feedback": (context) => Dev_feedback(),
+        "/PersonalPage": (context) => Personal_page(),
         "/PersonalPage_Mall_todo": (context) => Future_Mall_todo(),
         "/PersonalPage_Mall": (context) => Future_mall(),
         "/PersonalPage_Doctor": (context) => Personal_doctor(),
         "/PersonalPage_DoctorMed": (context) => Personal_buyMed(),
         "/PersonalPage_DoctorPres": (context) => Personal_Prescription(),
         "/PersonalPage_Bank": (context) => Personal_bank(),
+        "/Homepage": (context) => Homepage(),
       },
-      // home: Login(),
+      home: Login(),
       // home: Dev_main(),
       // home: Future_mall(),
       // home: Personal_doctor(),
-      home: Personal_bank(),
+      // home: Personal_bank(),
+      // home: Homepage(),
     );
   }
 }

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Personal_bank extends StatefulWidget {
-  const Personal_bank({Key? key}) : super(key: key);
+class Homepage extends StatefulWidget {
+  const Homepage({Key? key}) : super(key: key);
 
   @override
-  _Personal_bankState createState() => _Personal_bankState();
+  _HomepageState createState() => _HomepageState();
 }
 
-class _Personal_bankState extends State<Personal_bank> {
+class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Bank",
+          child: Text("Home",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -44,7 +44,7 @@ class _Personal_bankState extends State<Personal_bank> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/Bank.jpeg"),
+                            image: AssetImage("img/home.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
@@ -60,97 +60,54 @@ class _Personal_bankState extends State<Personal_bank> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.house_siding,
+                          Icons.construction,
                           color: Colors.black,
                         ),
                         title: Text(
-                          'Bank Of India',
+                          'Development Around You',
                           textScaleFactor: 1.5,
                         ),
 
                         // trailing: Icon(Icons.done),
-                        subtitle: Text('''Location : B.M. Chowk, kanpur
-Account No. : 1098746578362578
-Balance : Rs. 23,000
-Last Transaction : Rs. 300'''),
+                        // subtitle: Text('This is subtitle'),
                         // selected: true,
                         onTap: () {
                           setState(() {
                             print("1");
-                            // Navigator.pushNamed(
-                            //     context, '/DevelopmentPage_Future');
+                            Navigator.pushNamed(context, '/DevelopmentPage');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.house_siding,
+                          Icons.place,
                           color: Colors.black,
                         ),
                         title: Text(
-                          'Bank of Baroda',
+                          'Place to visit',
                           textScaleFactor: 1.5,
                         ),
-
-                        // trailing: Icon(Icons.done),
-                        subtitle: Text('''Location : K.K. Road, kanpur
-Account No. : 1364798746354876
-Balance : Rs. 2,30,000
-Last Transaction : Rs. 30,000'''),
-                        // selected: true,
                         onTap: () {
                           setState(() {
-                            print("1");
+                            print("2");
                             // Navigator.pushNamed(
-                            //     context, '/DevelopmentPage_Future');
+                            //     context, '/DevelopmentPage_ongoing');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.house_siding,
+                          Icons.person,
                           color: Colors.black,
                         ),
                         title: Text(
-                          'AXIS Bank',
+                          'Personal',
                           textScaleFactor: 1.5,
                         ),
-
-                        // trailing: Icon(Icons.done),
-                        subtitle: Text('''Location : B.M.C Mall Road, kanpur
-Account No. : 9876549998362988
-Balance : Rs. 13,000
-Last Transaction : Rs. 320'''),
-                        // selected: true,
                         onTap: () {
                           setState(() {
-                            print("1");
-                            // Navigator.pushNamed(
-                            //     context, '/DevelopmentPage_Future');
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
-                          Icons.house_siding,
-                          color: Colors.black,
-                        ),
-                        title: Text(
-                          'HDFC Bank',
-                          textScaleFactor: 1.5,
-                        ),
-
-                        // trailing: Icon(Icons.done),
-                        subtitle: Text('''Location : Jaya Chowk, Jholpur
-Account No. : 1098699678369999
-Balance : Rs. 6869
-Last Transaction : Rs. 69'''),
-                        // selected: true,
-                        onTap: () {
-                          setState(() {
-                            print("1");
-                            // Navigator.pushNamed(
-                            //     context, '/DevelopmentPage_Future');
+                            print("3");
+                            Navigator.pushNamed(context, '/PersonalPage');
                           });
                         },
                       ),

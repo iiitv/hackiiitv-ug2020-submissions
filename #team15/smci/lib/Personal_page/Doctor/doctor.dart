@@ -45,7 +45,7 @@ class _Personal_doctorState extends State<Personal_doctor> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/mumbai_map.jpg"),
+                            image: AssetImage("img/doctor.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
