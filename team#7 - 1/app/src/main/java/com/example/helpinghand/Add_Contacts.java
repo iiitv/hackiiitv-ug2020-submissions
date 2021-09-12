@@ -24,9 +24,10 @@ public class Add_Contacts extends AppCompatActivity {
     private static final int REQUEST_CODE_PICK_CONTACTS = 1;
     private Uri uriContact;
     private String contactID;
+    int number;
 
-    TextView contact_name_1;
-    TextView contact_number_1;
+    TextView contact_name_1,contact_name_2,contact_name_3;
+    TextView contact_number_1,contact_number_2,contact_number_3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,29 @@ public class Add_Contacts extends AppCompatActivity {
         {
             requestPermission();
         }else {
+            number = 1;
+            startActivityForResult(new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI), REQUEST_CODE_PICK_CONTACTS);
+        }
+    }
+
+    public void Add_Contact_2(View view) {
+
+        if(!hasPhoneContactsPermission())
+        {
+            requestPermission();
+        }else {
+            number = 2;
+            startActivityForResult(new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI), REQUEST_CODE_PICK_CONTACTS);
+        }
+    }
+
+    public void Add_Contact_3(View view) {
+
+        if(!hasPhoneContactsPermission())
+        {
+            requestPermission();
+        }else {
+            number = 3;
             startActivityForResult(new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI), REQUEST_CODE_PICK_CONTACTS);
         }
     }
@@ -53,12 +77,12 @@ public class Add_Contacts extends AppCompatActivity {
             Log.d(TAG, "Response: " + data.toString());
             uriContact = data.getData();
 
-            retrieveContactName();
-            retrieveContactNumber();
+            retrieveContactName(number);
+            retrieveContactNumber(number);
         }
     }
 
-    private void retrieveContactNumber() {
+    private void retrieveContactNumber(int number) {
 
         String contactNumber = null;
 
@@ -95,11 +119,23 @@ public class Add_Contacts extends AppCompatActivity {
 
         Log.d(TAG, "Contact Phone Number: " + contactNumber);
 
-        contact_number_1 = findViewById(R.id.editText_Phone1);
-        contact_number_1.setText((String)contactNumber);
+        if (number == 1) {
+
+            contact_number_1 = findViewById(R.id.editText_Phone1);
+            contact_number_1.setText((String) contactNumber);
+        }
+        else if (number == 2){
+            contact_number_2 = findViewById(R.id.editText_Phone2);
+            contact_number_2.setText((String) contactNumber);
+        }
+
+        else if (number == 3){
+            contact_number_3 = findViewById(R.id.editText_Phone3);
+            contact_number_3.setText((String) contactNumber);
+        }
     }
 
-    private void retrieveContactName() {
+    private void retrieveContactName(int number) {
 
         String contactName = null;
 
@@ -114,8 +150,22 @@ public class Add_Contacts extends AppCompatActivity {
         cursor.close();
 
         Log.d(TAG, "Contact Name: " + contactName);
-        contact_name_1 = findViewById(R.id.editText_PersonName1);
-        contact_name_1.setText((String)contactName);
+
+        if(number == 1)
+        {
+            contact_name_1 = findViewById(R.id.editText_PersonName1);
+            contact_name_1.setText((String)contactName);
+        }
+        else if (number == 2){
+            contact_name_2 = findViewById(R.id.editText_PersonName2);
+            contact_name_2.setText((String)contactName);
+        }
+
+        else if (number == 3){
+            contact_name_3 = findViewById(R.id.editText_PersonName2);
+            contact_name_3.setText((String)contactName);
+        }
+
     }
 
     private boolean hasPhoneContactsPermission() {
