@@ -1,0 +1,52 @@
+.box1{
+    border: none;
+    background-color: transparent;
+    height: 700px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: -20%;
+}
+
+.box1{
+    font-size: 30px;
+    font-weight: bold;
+   font-variant: small-caps;
+   text-shadow: 2px 2px 15px black;
+   margin-top: 50px;
+}
+
+.box2{
+    border: none;
+    background-color: transparent;
+    height: 700px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+img{
+    height: 339px;
+    width: 570.75px;
+    border-radius: 15px;
+    border: solid black ;
+}
+
+#allign{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    background-image: url('bg1.jpg');
+  }
