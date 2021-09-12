@@ -9,7 +9,7 @@ class NameForm extends React.Component {
       "password": event.target.password.value,
       "name": event.target.name.value,
       "address": event.target.address.value,
-      "dob": "18/09/2002",
+      "age": event.target.age.value,
       "pincode": event.target.pincode.value,
       "phone_number" : event.target.phone_number.value,
       "emergency_contact1" : event.target.econe.value,
@@ -47,8 +47,14 @@ class NameForm extends React.Component {
             ></input>
           </div>
           <div className="signin-input-wrapper">
-            <input className="signin-input" name="date" type="date"></input>
+            <input
+              className="signin-input"
+              type="text"
+              name="age"
+              placeholder="Age"
+            ></input>
           </div>
+          
           <div className="signin-input-wrapper">
             <input
               className="signin-input"

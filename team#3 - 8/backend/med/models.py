@@ -16,7 +16,7 @@ class CustomerDetails(models.Model):
     password = models.CharField(max_length=64,default="")
     name = models.CharField(max_length=100,default="")
     address = models.TextField(default="")
-    dob = models.DateField(default=datetime.now)
+    age = models.IntegerField(default=30)
     pincode = models.IntegerField(default=00000)
     phone_number = models.CharField(max_length=10,default="")
     emergency_contact1 = models.CharField(max_length=10,default="")

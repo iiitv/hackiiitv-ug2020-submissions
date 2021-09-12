@@ -11,7 +11,7 @@ class Customer:
             password=data['password'],
             name = data['name'],
             address = data['address'],
-            dob = datetime.strptime(data['dob'], "%d/%m/%y"),
+            age = data['age'],
             pincode = data['pincode'],
             phone_number = data['phone_number'],
             emergency_contact1 = data['emergency_contact1'],
@@ -21,9 +21,9 @@ class Customer:
         signup.save()
         return signup
 
-    def customer_login(self, cust_id):
+    def customer_login(self, email):
 
-        login = CustomerDetails.objects.get(pk=cust_id)
+        login = CustomerDetails.objects.get(cust_email=email)
         return login
 
     

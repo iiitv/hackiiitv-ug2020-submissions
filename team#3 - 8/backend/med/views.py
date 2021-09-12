@@ -12,33 +12,30 @@ def index(request):
 
 
 @csrf_exempt
+@require_http_methods(["POST"])
 def customer_signup(request):
-    if request.method == "POST":
-        body_unicode = request.body.decode('utf-8')
-        json_data = json.loads(body_unicode)
-        print(json_data)
-        customer_details = Customer.customer_signup(request, json_data)
-        response = {
-            "cust_id": customer_details.id,
-            "cust_email": customer_details.cust_email,
-            "password": customer_details.password,
-            "name": customer_details.name,
-            "address": customer_details.address,
-            "pincode": customer_details.pincode,
-            "phone_number": customer_details.phone_number,
-            "emergency_contact1": customer_details.emergency_contact1,
-            "emergency_contact2": customer_details.emergency_contact2
-            }
-        return JsonResponse(response)
-    else:
-        return HttpResponse()
-
+    json_data = json.loads(request.body)
+    print(json_data)
+    customer_details = Customer.customer_signup(request, json_data)
+    response = {
+        "cust_id": customer_details.id,
+        "cust_email": customer_details.cust_email,
+        "password": customer_details.password,
+        "name": customer_details.name,
+        "address": customer_details.address,
+        "age" : int(customer_details.age),
+        "pincode": int(customer_details.pincode),
+        "phone_number": customer_details.phone_number,
+        "emergency_contact1": customer_details.emergency_contact1,
+        "emergency_contact2": customer_details.emergency_contact2
+        }
+    return JsonResponse(response)
 
 @csrf_exempt
 @require_http_methods(["POST"]) 
-def customer_login(request, cust_id):
-
-    customer = Customer.customer_login(request, cust_id)
+def customer_login(request):
+    json_data = json.loads(request.body)
+    customer = Customer.customer_login(request, json_data['cust_email'])
     response = {
         "cust_id": customer.id,
         "cust_email": customer.cust_email,

@@ -9,7 +9,7 @@ curl --location --request POST 'http://127.0.0.1:8000/customers/signup' \
     "password": "111",
     "name": "abc",
     "address": "abc",
-    "dob": "18/09/19",
+    "age": "30",
     "pincode": 44444,
     "phone_number" : "1234567890",
     "emergency_contact1" : "1234567890",
@@ -19,7 +19,7 @@ curl --location --request POST 'http://127.0.0.1:8000/customers/signup' \
 
 ### Login:
 ```
-curl --location --request POST 'http://127.0.0.1:8000/customers/4/login' \
+curl --location --request POST 'http://127.0.0.1:8000/customers/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "cust_email": "demo@gmail.com",
