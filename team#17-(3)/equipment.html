@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Farm Equipment</title>
+    <!--bootstrap css -->
+    <link rel="stylesheet" href="CSS\equipment.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .bkcg{
+          background-color:#54436B;
+      }
+      .footerbckg{
+        background-color:#54436B;
+      }
+      #social-icons {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color:white;
+}
+      
+  </style>
+  <link rel="stylesheet" href="CSS\navBar.css">
+
+
+<body>
+    <!-- Navigation bar -->
+     <!-- Navigation Bar -->
+
+     <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bkcg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">AgroBay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="enterprise.html">Enterprises</a>
+                </li>
+                
+                <li class="nav-item">
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="about.html">Guides</a></li>
+                        <li><a class="dropdown-item" href="about.html">Useful Applications</a></li>
+                        <li><a class="dropdown-item" href="about.html">Techniques</a></li>
+                        <li><a class="dropdown-item" href="#weoffer">Contact Us</a></li>
+                      </ul>
+                    </div>
+                </li>
+                
+              </ul>
+              <form class="d-flex" action="login.html">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a class="nav-link firstbutton" href="login.html" >Login</a>
+                <a class="nav-link secondbutton" href="signup.html">Signup</a>
+              </form>
+              
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+
+
+    <!-- carousel content container -->
+    <section>
+        <div class="bgimage">
+
+            <img class="backgroundImage " src="images\loren-king-EA45-AXlvWk-unsplash.jpg" alt="" srcset="">
+
+            <div class="txtOverImg">
+                <h3 style="font-size: 3.75vw;">Rent Out Farm Equipment </h3>
+
+            </div>
+            <div class="txtOverImg2">
+                <!-- <<form class="example" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form> -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
+                        <path
+                            d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+                            fill-rule="evenodd" />
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+                        <path
+                            d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z"
+                            fill-rule="evenodd" />
+                    </symbol>
+                </svg>
+
+                <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-google">
+                    <div role="search" class="sbx-google__wrapper">
+                        <input type="search" name="search" placeholder="Enter Location" autocomplete="off"
+                            required="required" class="sbx-google__input">
+                        <button type="submit" title="Submit your search query." class="sbx-google__submit">
+                            <svg role="img" aria-label="Search">
+                                <use xlink:href="#sbx-icon-search-13"></use>
+                            </svg>
+                        </button>
+                        <button type="reset" title="Clear the search query." class="sbx-google__reset">
+                            <svg role="img" aria-label="Reset">
+                                <use xlink:href="#sbx-icon-clear-3"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <script type="text/javascript">
+                    document.querySelector('.searchbox [type="reset"]').addEventListener('click', function () {
+                        this.parentNode.querySelector('input').focus();
+                    });
+                </script>
+            </div>
+            <div class="txtOverImg3">
+                <a href="#" class="myButton">Need Equipment ?</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div>
+
+        <div class="provider_info">
+
+        </div>
+        <div class="provider_info">
+
+        </div>
+
+        <div id="info" class="container-fluid">
+            <div class="row">
+            <div class=" col col-lg-3 col-md-6 col-sm-1 check">
+                <img src="images\image1.jpg" alt="" srcset="">
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-1 check">
+                <img src="images\image2.jpg" alt="" srcset="">
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-1 check">
+                <img src="images\image3.jpg" alt="" srcset="">
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-1  check" >
+                <img style="margin-left:10px;" src="images\image4.jpg" alt="" srcset="">
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row"style=" 
+            display: flex;
+            justify-content: center";
+        >
+                <div class="col-lg-6 connect" >
+                    <img style="height: 30vw;" src="images\tractorEquipment.jpeg" alt="" srcset="">
+                </div>
+                <div class="col-lg-6 connect">
+                    <img style="height: 30vw;" src="images\farmer.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="moto">
+            <h2 style="font-size:2.5vw;">We connect the person with one who want's it</h2>
+        </div>
+
+        <div>
+            <h1 style="font-size:3vw; text-align:center; margin: 30px;">Listing In 3 Steps</h1>
+            
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="margin: 100px; 
+            text-align-last: center;" >
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div style="display: block;
+                    text-align: center;">
+                        <img class="imgCheck" src="images\check.png" alt="">
+                    </div>
+                    <header class="dealHeading" >
+                        List your equipment for free
+                    </header>
+                    <footer class="dealFooter" >
+                        Share your tractor, tiller, or any type of farm equipment. Listing takes only 2 minutes and is
+                        free there are no sign-up charges and no monthly fees.
+                    </footer>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div style="display: block;
+                    text-align: center;">
+                        <img class="imgCheck" src="images\check.png" alt="">
+                    </div>
+                    <header class="dealHeading">
+                        Set your price & policy
+                    </header>
+                    <footer class="dealFooter" >
+                        Set your own selling price. You can add daily or hourly prices as well. Choose the policy as per
+                        your convenience. </footer>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div style="    display: block;
+                    text-align: center;">
+                        <img class="imgCheck" src="images\check.png" alt="">
+                    </div>
+                    <header class="dealHeading" >
+                        Sit back & earn </header>
+                    <footer class="dealFooter">
+                        Accept bookings. Get amount via direct deposit in to your bank account after successful job
+                        completion. </footer>
+                </div>
+            </div>
+
+            <div class="container-fluid bgimage2" style="padding: 0;margin: 0%;">
+                <div>
+                    <img style="width: 100%; height: 40vw;"src="images\chris-ensminger-yJDZTDeHeG8-unsplash.jpg" alt="">
+                </div>
+                <div class="txtOverImg2">
+                    <h1>Put your farm machinery on work</h1>
+                    <a href="" class="btn">List equipment</a>
+                </div>
+            </div>
+
+
+            <!-- Contact us -->
+            <section class="contact-us" id="contact">
+                
+            <div>
+                <h1>Connect With us</h1>
+            </div>
+                <div style="margin-top:3% ;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="section-heading">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <div class="footer-address">
+                                    <h6 style="font-weight:bold;color: #2c3e50;">Head Office</h6>
+                                    <p>Sector-21 Greater Noida</p>
+                                    <ul style="text-decoration: none;">
+                                        <li ><i class="fa fa-envelope-o"></i><span>Email : <a
+                                                    href="mailto:assist@AgroBay.app">AgroBay@gmail.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <form class="contact-us-form ng-pristine ng-invalid" novalidate="">
+                                    <h6 style="font-weight:bold;color: #2c3e50; margin-bottom:20px;">Reach Us Quickly
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group"><input class="form-control   ng-pristine ng-invalid"
+                                                    name="name" ngmodel="" placeholder="Name*" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group"><input class="form-control   ng-pristine ng-invalid"
+                                                    name="email" ngmodel="" placeholder="Email*" required=""
+                                                    type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group"><input class="form-control   ng-pristine ng-valid"
+                                                    maxlength="12" minlength="10" name="mobile" ngmodel=""
+                                                    placeholder="Mobile No." type="text"></div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group"><input class="form-control   ng-pristine ng-valid"
+                                                    name="company" ngmodel="" placeholder="Subject" size="40"
+                                                    type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-12">
+                                            <div class="form-group"><textarea
+                                                    class="form-control   ng-pristine ng-valid" cols="25" name="message"
+                                                    ngmodel="" placeholder="Message*" rows="3"></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12  ">
+                                            <a href="#" class="Sendbtn">Send Message</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center text-lg-start footerbckg text-muted">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" id="connected">
+              <span class="textColor">Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div> 
+              <a href="#"><i class="fa fa-facebook-square" style="font-size:30px;" id="social-icons"></i></a>
+              <a href="#"><i class="fa fa-twitter-square" style="font-size:30px;" id="social-icons"></i></a>
+              <a href="#"><i class="fa fa-google" style="font-size:30px;" id="social-icons"></i></a>
+              <a href="#"><i class="fa fa-instagram" style="font-size:30px;" id="social-icons"></i></a>
+              <a href="#"><i class="fa fa-linkedin-square" style="font-size:30px;" id="social-icons"></i></a>
+          
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4 textColor">
+                AgroBay
+                  </h6>
+                  <p>
+                    Company short brief.
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="weoffer">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 textColor">
+                    We Offer
+                  </h6>
+                  <p>
+                    <a href="#!" class="textColor ">Machinery</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Farming tools</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Labour</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Laravel</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="useful-links">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4 textColor">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a href="#!" class="textColor ">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Career</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Guides</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="textColor ">Partnerships</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 textColor">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Contact
+                  </h6>
+                  <p>Sector 21, Greater Noida</p>
+                  <p>UP - 201305</p>
+                  <p>company@egoogle.com</p>
+                  <p>+91 964xxxxxx</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: #71EFA3;">
+            © 2021 Copyright:
+            <a class="  fw-bold textColor" href="https://mdbootstrap.com/">AgroBay</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+</body>
+
+</html>
