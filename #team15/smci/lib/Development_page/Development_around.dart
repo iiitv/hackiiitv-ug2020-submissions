@@ -41,7 +41,7 @@ class _Dev_mainState extends State<Dev_main> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,

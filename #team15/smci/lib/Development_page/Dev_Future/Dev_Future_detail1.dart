@@ -40,11 +40,11 @@ class _Dev_FutureDetail1State extends State<Dev_FutureDetail1> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/const.jpeg"),
+                            image: AssetImage("img/iiitv.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
