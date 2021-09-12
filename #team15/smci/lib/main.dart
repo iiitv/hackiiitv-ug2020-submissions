@@ -15,6 +15,9 @@ import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail3.dart';
 import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail4.dart';
 import 'package:smci/Development_page/Development_around.dart';
 import 'package:smci/Development_page/Feedback.dart';
+import 'package:smci/Personal_page/Doctor_med.dart';
+import 'package:smci/Personal_page/Prescription.dart';
+import 'package:smci/Personal_page/doctor.dart';
 import 'package:smci/Personal_page/mall.dart';
 import 'package:smci/Personal_page/mall_todolist.dart';
 import 'package:smci/login.dart';
@@ -62,10 +65,14 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_Await_detail_2": (context) => Dev_AwaitDetail2(),
         "/DevelopmentPage_Feedback": (context) => Dev_feedback(),
         "/PersonalPage_Mall_todo": (context) => Future_Mall_todo(),
+        "/PersonalPage_Doctor": (context) => Personal_doctor(),
+        "/PersonalPage_DoctorMed": (context) => Personal_buyMed(),
+        "/PersonalPage_DoctorPres": (context) => Personal_Prescription(),
       },
       // home: Login(),
       // home: Dev_main(),
-      home: Future_mall(),
+      // home: Future_mall(),
+      home: Personal_doctor(),
     );
   }
 }
