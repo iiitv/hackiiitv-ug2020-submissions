@@ -21,7 +21,7 @@ class Sos extends React.Component {
   
   render() {
     return (
-      <React.Fragment>
+      <div className="sos-outer">
         <Navbar />
         <div class="sos-wrap">
           <button class="sos-button" onClick={this.handleSubmit}>SOS</button>
@@ -33,7 +33,7 @@ class Sos extends React.Component {
             please click only if you need immediate medical attention
           </span>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
