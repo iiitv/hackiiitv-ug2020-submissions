@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +10,71 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <style>
+      .bkcg{
+          background-color:#54436B;
+      }
+      .footerbckg{
+          background-color:#50CB93;
+      }
+  </style>
+
+  </head>
+<body style="background-color:#71EFA3">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bkcg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Company</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enterprise.html">Enterprises</a>
+            </li>
+            
+            <li class="nav-item">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Guides</a></li>
+                    <li><a class="dropdown-item" href="#">Useful Applications</a></li>
+                    <li><a class="dropdown-item" href="#">Techniques</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="#weoffer">Contact Us</a></li>
+                  </ul>
+                </div>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" id="firstbutton" type="submit" href="team#17-(3)/login.html">Login</button>
+            <button class="btn btn-outline-success" id="secondbutton" type="submit">SignUp</button>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
     <main>
         <div class="container py-4">
-          <header class="pb-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-              <span class="fs-4">work with us</span>
-            </a>
-          </header>
-      
-          <div class="p-5 mb-4 bg-light rounded-3">
+
+          <div class="p-5 mb-4 bg-light rounded-3" style="margin-top: 3rem;">
             <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Requirements</h1>
-              <p class="col-md-8 fs-4">we are trying to provide work for every farm labour.you can join with us by filling your strength in different area of agriculture work.</p>
+              <h1 class="display-5 fw-bold">Need someone to maximise your profit</h1>
+              <p class="col-md-8 fs-4">if you want to earn more production in your agriculture business. it is the right place for you, we will connect you with those farmers who can give a good yield.</p>
               <button class="btn btn-primary btn-lg" type="button">Register Here</button>
             </div>
           </div>
@@ -31,119 +82,81 @@
           <div class="row align-items-md-stretch">
             <div class="col-md-6">
               <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Change the background</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
+                <h2>Wanna rent your machines ?</h2>
+                <p>Maximize earning potential by serving more farmers through out the cropping cycle.need not to worry, we will connect you to desired farmers.</p>
+                <button class="btn btn-outline-light" type="button">Know more</button>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-              </div>
-            </div>
-          </div>
-<br>
 
-          <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Change the background</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-              </div>
-            </div>
             <div class="col-md-6">
               <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
+                <h2>Wanna expand your farming business ?</h2>
+                <p>Partnership with us and expand your wholesale business by selling the farming tools and chemicals at wholesale prices directly to the farmers. </p>
+                <button class="btn btn-outline-secondary" type="button">Register here</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6 my-4">
+              <div class="h-100 p-5 text-white bg-dark rounded-3">
+                <h2>Searching for someone to fullfill your needs.</h2>
+                <p>Your customers demand top quality of foods.Their online shopping experience should be no different.connect with us for good experience.</p>
+                <button class="btn btn-outline-light" type="button">Join us</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 my-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Grow your wealth with passive investments in farming and agribusiness.</h2>
+                <p> Agribusiness is a very important component of the economy in most countries since with population increase, the demand for agricultural products keeps rising. For this reason, investing in agribusiness means supporting an industry that provides a lot of value to the community.</p>
+                <button class="btn btn-outline-secondary" type="button">Reach us</button>
               </div>
             </div>
           </div>
-          
+
       
-          <footer class="pt-3 mt-4 text-muted border-top">
-            &copy; 2021
-          </footer>
+          
         </div>
       </main>
       <div class="col-lg-8 mx-auto p-3 py-md-5">
-        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-            <span class="fs-4">Starter template</span>
-          </a>
-        </header>
+       
         <main>
-            <h1>Get started with Bootstrap</h1>
-            <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+            <h1>Support</h1>
+            <p class="fs-5 col-md-8">We back our flexible, integrated software with a choice of technical support options that range from the economical Basic Support for occasional users to VIP and Corporate Support for mission-critical, multi-user networks.   Our state-of-the-art remote desktop service is just like having a support tech in your office!</p>
         
             <div class="mb-5">
-              <a href="/docs/5.1/examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+              <a href="/docs/5.1/examples/" class="btn btn-primary btn-lg px-4">Read more</a>
+
             </div>
         
-            <hr class="col-3 col-md-2 mb-5">
+            
         
-            <div class="row g-5">
-              <div class="col-md-6">
-                <h2>Starter projects</h2>
-                <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-                <ul class="icon-list">
-                  <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
-                  <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
-                </ul>
-              </div>
-        
-              <div class="col-md-6">
-                <h2>Guides</h2>
-                <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-                <ul class="icon-list">
-                  <li><a href="/docs/5.1/getting-started/introduction/">Bootstrap quick start guide</a></li>
-                  <li><a href="/docs/5.1/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-                  <li><a href="/docs/5.1/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-                  <li><a href="/docs/5.1/getting-started/contribute/">Contributing to Bootstrap</a></li>
-                </ul>
-              </div>
-            </div>
+           
           </main>
           
       </div>
 
         
 <!-- Footer -->
+
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
+    <div class="me-5 d-none d-lg-block" id="connected">
       <span>Get connected with us on social networks:</span>
     </div>
     <!-- Left -->
 
     <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f color:red"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
+    <div> 
+      <a href="#"><i class="fa fa-facebook-square" style="font-size:30px;" id="social-icons"></i></a>
+      <a href="#"><i class="fa fa-twitter-square" style="font-size:30px;" id="social-icons"></i></a>
+      <a href="#"><i class="fa fa-google" style="font-size:30px;" id="social-icons"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:30px;" id="social-icons"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square" style="font-size:30px;" id="social-icons"></i></a>
+  
     </div>
     <!-- Right -->
   </section>
@@ -161,26 +174,25 @@
             <i class="fas fa-gem me-3"></i>Company name
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            Company short brief.
           </p>
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="weoffer">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            We Offer
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="#!" class="text-reset">Machinery</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" class="text-reset">Farming tools</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#!" class="text-reset">Labour</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Laravel</a>
@@ -189,7 +201,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="useful-links">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
@@ -198,13 +210,13 @@
             <a href="#!" class="text-reset">Pricing</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="#!" class="text-reset">Career</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            <a href="#!" class="text-reset">Guides</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="#!" class="text-reset">Partnerships</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -216,6 +228,9 @@
             Contact
           </h6>
           <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <i class="fa fa-home"></i>
+          <p><i class="fas fa-home"></i> New York, NY 10012, US</p>
+          <p ><i class="fas fa-home" style="font-size:20px;" ></i>New York, NY 10012, US</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
             info@example.com
@@ -231,12 +246,13 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4" style="background-color: rgb(190, 190, 190);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Company Name</a>
   </div>
   <!-- Copyright -->
 </footer>
+
 <!-- Footer -->
 
 
