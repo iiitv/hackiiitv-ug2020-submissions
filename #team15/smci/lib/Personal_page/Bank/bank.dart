@@ -63,6 +63,7 @@ class _Personal_bankState extends State<Personal_bank> {
                         leading: Icon(
                           Icons.house_siding,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Bank Of India',
@@ -87,6 +88,7 @@ Last Transaction : Rs. 300'''),
                         leading: Icon(
                           Icons.house_siding,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Bank of Baroda',
@@ -111,6 +113,7 @@ Last Transaction : Rs. 30,000'''),
                         leading: Icon(
                           Icons.house_siding,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'AXIS Bank',
@@ -135,6 +138,7 @@ Last Transaction : Rs. 320'''),
                         leading: Icon(
                           Icons.house_siding,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'HDFC Bank',

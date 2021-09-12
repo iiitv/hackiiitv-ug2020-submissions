@@ -64,6 +64,7 @@ class _Future_mallState extends State<Future_mall> {
                         leading: Icon(
                           Icons.shopping_bag,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Make shopping list',
@@ -85,6 +86,7 @@ class _Future_mallState extends State<Future_mall> {
                         leading: Icon(
                           Icons.shopping_cart,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Buy Online',

@@ -63,6 +63,7 @@ class _Personal_pageState extends State<Personal_page> {
                         leading: Icon(
                           Icons.health_and_safety,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Health',
@@ -84,6 +85,7 @@ class _Personal_pageState extends State<Personal_page> {
                         leading: Icon(
                           Icons.account_balance_wallet,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Wealth',
@@ -100,6 +102,7 @@ class _Personal_pageState extends State<Personal_page> {
                         leading: Icon(
                           Icons.shopping_cart,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Shopping',

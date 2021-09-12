@@ -63,6 +63,7 @@ class _HomepageState extends State<Homepage> {
                         leading: Icon(
                           Icons.construction,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Development Around You',
@@ -83,6 +84,7 @@ class _HomepageState extends State<Homepage> {
                         leading: Icon(
                           Icons.place,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Place to visit',
@@ -100,6 +102,7 @@ class _HomepageState extends State<Homepage> {
                         leading: Icon(
                           Icons.person,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Personal',

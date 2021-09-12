@@ -61,6 +61,7 @@ class _Personal_PrescriptionState extends State<Personal_Prescription> {
                       ListTile(
                         leading: Icon(
                           Icons.person,
+                          size: 40,
                           color: Colors.black,
                         ),
                         title: Text(

@@ -64,6 +64,7 @@ class _Personal_doctorState extends State<Personal_doctor> {
                         leading: Icon(
                           Icons.person,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Visit',
@@ -86,6 +87,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                         leading: Icon(
                           Icons.person,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Appointment',
@@ -105,6 +107,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                         leading: Icon(
                           Icons.sticky_note_2,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Prescription',
@@ -122,6 +125,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                         leading: Icon(
                           Icons.medication_rounded,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Order Medicine',
@@ -139,6 +143,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                         leading: Icon(
                           Icons.call,
                           color: Colors.black,
+                          size: 40,
                         ),
                         title: Text(
                           'Emergency',

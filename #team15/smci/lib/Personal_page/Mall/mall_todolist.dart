@@ -8,6 +8,7 @@ class Future_Mall_todo extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
