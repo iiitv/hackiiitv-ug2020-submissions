@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pgcss %}
+
+<link rel="stylesheet" href="../static/css/profile.css">
+<link rel="stylesheet" href="../static/css/index.css">
+{% endblock pgcss %}
+{% block content %}
+
+
+
+<form role="form" method="POST" action="" class="my-auto">
+ {% csrf_token %}
+    <div class="container">
+    <div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+
+            <!-- add disabled afterwards -->
+            
+            <a href="" type="button" class="btn btn-primary btn-circle">1</a>
+            <p class="step">Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">2</a>
+            <p class="step">Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">3</a>
+            <p class="step">Step 3</p>
+        </div>
+        
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">4</a>
+            <p class="step">Step 4</p>
+        </div>
+        
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">5</a>
+            <p class="step">Step 5</p>
+        </div>
+        
+    </div>
+</div>
+
+
+    <div class="phone-form">
+        <div class="row" id="step-1">
+            <div class="col-md-12"> 
+                <div class="input-box text-center py-3">
+                    <!-- id=phonebox -->
+                    <input maxlength="10" id="phone" class="form-control" placeholder="Enter your phone number" type="tel" required aria-required="true" name="phone">
+                </div>
+                <div class="button">
+                    
+                    <!-- id=validate -->
+                <!-- <input type="submit" value="Next step" id="submit" disabled> -->
+                <button type="submit" id="submit" > Next Step </button>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</form>
+{% for message in messages %}
+    {{ message }}
+{% endfor %}
+
+{% endblock content %}
+
