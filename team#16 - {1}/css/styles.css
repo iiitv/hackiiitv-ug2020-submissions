@@ -1,0 +1,116 @@
+#title {
+
+  color: #fff;
+}
+.container-fluid {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Monsterrat-Light";
+}
+.govimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 25%;
+}
+#transport{
+  text-align: center;
+}
+.tp{
+  background-color: #F0E5CF;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  display: block;
+
+}
+.train{
+  height:auto;
+  width: 50%;
+  padding: 20px;
+}
+.mar{
+  color: red;
+}
+#newsletter{
+  text-align: center;
+}
+.nl{
+  background-color: #A8E7E9;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  display: block;
+  color: #610094;
+}
+.ns{
+  width:10%;
+  height: auto;
+  padding: 20px;
+}
+.nl-content{
+  color: #630A10;
+  padding: 30px;
+}
+.ns1{
+  padding: 20px;
+  padding-bottom: 40px;
+}
+#footer {
+  padding: 100px 200px 100px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.footer-icons {
+  padding: 30px 10px;
+}
+#payments{
+  text-align: center;
+}
+
+.pt{
+  padding: 50px;
+  padding-bottom: 100px;
+  background-color: #F0E5CF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  display: block;
+
+}
+.money{
+  width:10%;
+  height: auto;
+  padding: 20px;
+}
+
+.pay{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.dd{
+  padding-left: 0 18px;
+}
