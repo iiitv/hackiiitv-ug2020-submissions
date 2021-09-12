@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smci/drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Future_mall extends StatefulWidget {
@@ -25,7 +26,7 @@ class _Future_mallState extends State<Future_mall> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(child: draw()),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(

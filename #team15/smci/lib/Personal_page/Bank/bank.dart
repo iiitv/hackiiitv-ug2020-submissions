@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smci/drawer.dart';
 
 class Personal_bank extends StatefulWidget {
   const Personal_bank({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _Personal_bankState extends State<Personal_bank> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(child: draw()),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(

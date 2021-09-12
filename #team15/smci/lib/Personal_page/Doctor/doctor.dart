@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smci/drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Personal_doctor extends StatefulWidget {
@@ -25,7 +26,7 @@ class _Personal_doctorState extends State<Personal_doctor> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(child: draw()),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(

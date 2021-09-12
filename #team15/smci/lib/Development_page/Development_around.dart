@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smci/drawer.dart';
 
 class Dev_main extends StatefulWidget {
   const Dev_main({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _Dev_mainState extends State<Dev_main> {
               ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(child: draw()),
       body: SingleChildScrollView(
         // physics: NeverScrollableScrollPhysics(),
         child: Column(
