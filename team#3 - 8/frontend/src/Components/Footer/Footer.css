@@ -1,0 +1,39 @@
+.footer-container {
+  color: #ffffff;
+  padding: 50px 18% 50px 18%;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .footer-child {
+  padding: 5%;
+}
+
+.footer-container .footer-child .footer-title {
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.footer-container .footer-child .footer-subtitle {
+  font-family: Mulish;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.footer-container .footer-child .footer-subtitle .footer-text {
+  padding: 5px;
+}
+
+.footer-container .footer-child .footer-img {
+  height: auto;
+  width: auto;
+}
+/*# sourceMappingURL=Footer.css.map */

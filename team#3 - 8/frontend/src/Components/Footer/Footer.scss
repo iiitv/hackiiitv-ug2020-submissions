@@ -1,0 +1,32 @@
+.footer-container {
+  color: #ffffff;
+  padding: 50px 18% 50px 18%;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+
+  .footer-child {
+    padding: 5%;
+    .footer-title {
+      font-family: Mulish;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 5px;
+    }
+
+    .footer-subtitle {
+      font-family: Mulish;
+      font-weight: 300;
+      font-size: 15px;
+      .footer-text {
+        padding: 5px;
+      }
+    }
+
+    .footer-img {
+      height: auto;
+      width: auto;
+    }
+  }
+}

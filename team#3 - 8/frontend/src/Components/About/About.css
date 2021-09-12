@@ -1,5 +1,5 @@
 .about {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,11 +51,12 @@
   color: white;
   font-weight: 700;
   padding: 8px 40px 10px 40px;
-  background-color: #458FF6;
+  background-color: #458ff6;
   border-radius: 24px;
 }
 
 .about img {
   height: 80vh;
+  width: auto;
 }
 /*# sourceMappingURL=About.css.map */

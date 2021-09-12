@@ -5,6 +5,7 @@ import Covid from "./Components/Covid/Covid"
 import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
 import Map from "./Components/Map/Map";
+import Navbar from "./Components/Navbar/Navbar";
 import "./App.css";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
         <Route exact path="/"><Home /></Route>
         <Route exact path="/nearestHosp"><Map /></Route>
         <Route exact path="/sos"></Route>
-        <Route exact path="/login"><Signin /></Route>
-        <Route exact path="/register"><Signup /></Route>
+        <Route exact path="/login"><Navbar /><Signin /></Route>
+        <Route exact path="/register"><Navbar /><Signup /></Route>
         <Route exact path="/covid"><Covid /></Route>
         <Route exact path="/contact"></Route>
       </Router>
