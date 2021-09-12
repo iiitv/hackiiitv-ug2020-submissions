@@ -25,6 +25,11 @@ import 'package:smci/Personal_page/Mall/mall_todolist.dart';
 import 'package:smci/Personal_page/personal_page.dart';
 import 'package:smci/home_page.dart';
 import 'package:smci/login.dart';
+import 'package:smci/place_page/Place_page.dart';
+import 'package:smci/place_page/diu_beach.dart';
+import 'package:smci/place_page/diu_church.dart';
+import 'package:smci/place_page/diu_fort.dart';
+import 'package:smci/place_page/diu_mus.dart';
 
 void main() {
   runApp(MyApp());
@@ -81,6 +86,11 @@ class MyApp extends StatelessWidget {
           "/PersonalPage_DoctorPres": (context) => Personal_Prescription(),
           "/PersonalPage_Bank": (context) => Personal_bank(),
           "/Homepage": (context) => Homepage(),
+          "/Placepage": (context) => Place_page(),
+          "/Placepage_diuFort": (context) => Diufort(),
+          "/Placepage_diumus": (context) => Diumus(),
+          "/Placepage_diuchurch": (context) => Diuchurch(),
+          "/Placepage_diubeach": (context) => DiucBeach(),
         },
         // home: Login(),
         // home: Dev_main(),
@@ -88,6 +98,8 @@ class MyApp extends StatelessWidget {
         // home: Personal_doctor(),
         // home: Personal_bank(),
         // home: Homepage(),
+        // home: Place_page(),
+
         home: AnimatedSplashScreen(
             duration: 1000,
             // splash: Icons.person,
@@ -98,6 +110,7 @@ class MyApp extends StatelessWidget {
             splashTransition: SplashTransition.fadeTransition,
             // pageTransitionType: PageTransitionType.rightToLeft,
             backgroundColor: Colors.orange.shade400)
+
         // home: AnimatedSplashScreen.withScreenFunction(
         //   curve: Curves.easeInCirc,
         //   splash: 'img/ic.jpeg',

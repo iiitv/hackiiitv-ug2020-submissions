@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:smci/drawer.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+class Place_page extends StatefulWidget {
+  const Place_page({Key? key}) : super(key: key);
 
   @override
-  _HomepageState createState() => _HomepageState();
+  _Place_pageState createState() => _Place_pageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _Place_pageState extends State<Place_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Home",
+          child: Text("Place Nearby",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -45,7 +45,7 @@ class _HomepageState extends State<Homepage> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/home.jpeg"),
+                            image: AssetImage("img/diu.jpeg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
@@ -61,22 +61,22 @@ class _HomepageState extends State<Homepage> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.construction,
+                          Icons.place,
                           color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
-                          'Development Around You',
+                          'Diu Fort',
                           textScaleFactor: 1.5,
                         ),
 
                         // trailing: Icon(Icons.done),
-                        // subtitle: Text('This is subtitle'),
+                        subtitle: Text('Near PWD office, Diu'),
                         // selected: true,
                         onTap: () {
                           setState(() {
                             print("1");
-                            Navigator.pushNamed(context, '/DevelopmentPage');
+                            Navigator.pushNamed(context, '/Placepage_diuFort');
                           });
                         },
                       ),
@@ -87,30 +87,51 @@ class _HomepageState extends State<Homepage> {
                           size: 40,
                         ),
                         title: Text(
-                          'Place to visit',
+                          'Diu Museum',
                           textScaleFactor: 1.5,
                         ),
+                        subtitle: Text('Near Airport, Diu'),
                         onTap: () {
                           setState(() {
                             print("2");
-                            Navigator.pushNamed(context, '/Placepage');
+                            Navigator.pushNamed(context, '/Placepage_diumus');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.person,
+                          Icons.place,
                           color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
-                          'Personal',
+                          '''Saint Paul's church''',
                           textScaleFactor: 1.5,
                         ),
+                        subtitle: Text('Diu'),
                         onTap: () {
                           setState(() {
                             print("3");
-                            Navigator.pushNamed(context, '/PersonalPage');
+                            Navigator.pushNamed(
+                                context, '/Placepage_diuchurch');
+                          });
+                        },
+                      ),
+                      ListTile(
+                        leading: Icon(
+                          Icons.place,
+                          color: Colors.black,
+                          size: 40,
+                        ),
+                        title: Text(
+                          '''Nagoa Beach''',
+                          textScaleFactor: 1.5,
+                        ),
+                        subtitle: Text('Near IIITV-ICD Campus, Diu'),
+                        onTap: () {
+                          setState(() {
+                            print("3");
+                            Navigator.pushNamed(context, '/Placepage_diubeach');
                           });
                         },
                       ),

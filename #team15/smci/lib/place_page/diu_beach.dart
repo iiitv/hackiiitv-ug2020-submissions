@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:smci/drawer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+class DiucBeach extends StatefulWidget {
+  const DiucBeach({Key? key}) : super(key: key);
 
   @override
-  _HomepageState createState() => _HomepageState();
+  _DiucBeachState createState() => _DiucBeachState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _DiucBeachState extends State<DiucBeach> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Padding(
           padding: const EdgeInsets.all(0.0),
-          child: Text("Home",
+          child: Text("Nagoa Beach",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
@@ -45,7 +46,7 @@ class _HomepageState extends State<Homepage> {
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage("img/home.jpeg"),
+                            image: AssetImage("img/nagoa.jpg"),
                           )),
 
                       // child: Image.asset("img/mumbai_map.jpg"),
@@ -61,56 +62,69 @@ class _HomepageState extends State<Homepage> {
                     children: [
                       ListTile(
                         leading: Icon(
-                          Icons.construction,
-                          color: Colors.black,
-                          size: 40,
-                        ),
-                        title: Text(
-                          'Development Around You',
-                          textScaleFactor: 1.5,
-                        ),
-
-                        // trailing: Icon(Icons.done),
-                        // subtitle: Text('This is subtitle'),
-                        // selected: true,
-                        onTap: () {
-                          setState(() {
-                            print("1");
-                            Navigator.pushNamed(context, '/DevelopmentPage');
-                          });
-                        },
-                      ),
-                      ListTile(
-                        leading: Icon(
                           Icons.place,
                           color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
-                          'Place to visit',
+                          "Nagoa Beach",
                           textScaleFactor: 1.5,
                         ),
+
+                        // trailing: Icon(Icons.done),
+                        subtitle: Text('''Location : Near IIITV-ICD Campus, Diu
+Opening Time : NA 
+Closing Time : NA 
+Ticket Fare : NA'''),
+                        // selected: true,
                         onTap: () {
                           setState(() {
-                            print("2");
-                            Navigator.pushNamed(context, '/Placepage');
+                            print("1");
+                            // Navigator.pushNamed(
+                            //     context, '/DevelopmentPage_Future');
                           });
                         },
                       ),
                       ListTile(
                         leading: Icon(
-                          Icons.person,
+                          Icons.file_copy,
                           color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
-                          'Personal',
+                          'About',
                           textScaleFactor: 1.5,
                         ),
+
+                        // trailing: Icon(Icons.done),
+                        subtitle: Text('''Tap here to know more'''),
+                        // selected: true,
                         onTap: () {
-                          setState(() {
-                            print("3");
-                            Navigator.pushNamed(context, '/PersonalPage');
+                          setState(() async {
+                            print("1");
+                            await launch(
+                                "https://en.m.wikipedia.org/wiki/Nago%C3%A1_Beach");
+                          });
+                        },
+                      ),
+                      ListTile(
+                        leading: Icon(
+                          Icons.car_rental,
+                          color: Colors.black,
+                          size: 40,
+                        ),
+                        title: Text(
+                          'Book Cab',
+                          textScaleFactor: 1.5,
+                        ),
+
+                        // trailing: Icon(Icons.done),
+                        subtitle: Text('''Ride to this place'''),
+                        // selected: true,
+                        onTap: () {
+                          setState(() async {
+                            print("1");
+                            await launch("https://www.olacabs.com/");
                           });
                         },
                       ),

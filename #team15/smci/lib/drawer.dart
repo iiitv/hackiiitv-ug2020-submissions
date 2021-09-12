@@ -55,7 +55,7 @@ Awaited Projects'''),
           "Places Nearby",
           textScaleFactor: 1.5,
         ),
-        subtitle: Text("Most visited places"),
+        subtitle: Text("Place to visit"),
         onTap: () {
           // Navigator.pushNamed(context, '/Filter');
         },
