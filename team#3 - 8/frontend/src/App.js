@@ -6,6 +6,7 @@ import Signup from "./Components/Signup/Signup";
 import Signin from "./Components/Signin/Signin";
 import Map from "./Components/Map/Map";
 import Navbar from "./Components/Navbar/Navbar";
+import Sos from "./Components/Sos/Sos";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Router>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/nearestHosp"><Map /></Route>
-        <Route exact path="/sos"></Route>
+        <Route exact path="/sos"><Sos /></Route>
         <Route exact path="/login"><Navbar /><Signin /></Route>
         <Route exact path="/register"><Navbar /><Signup /></Route>
         <Route exact path="/covid"><Covid /></Route>
