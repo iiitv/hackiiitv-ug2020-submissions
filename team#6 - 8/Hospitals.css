@@ -1,0 +1,281 @@
+img.a{
+    width: 50px;
+    height: 50px;
+    
+}
+
+img.wa{
+    width: 60px; 
+    height: 60px;
+     bottom: 20px;
+     right: 8px;
+      position: fixed;
+ }
+p{
+  text-align: center;
+  margin: 80px;
+}
+.Tittle{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color:rgb(241, 24, 42);
+}
+.Hinditext{
+  font-size: 40px;
+  color: rgb(240, 39, 39);
+  text-align: center;
+  font-weight: 1000;
+}
+.Service{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(1, 16, 24);
+}
+body.background{
+  height: auto;
+}
+.hospital {
+  background-color: #fff;
+  margin: 20px 1px 1px;
+  padding: 15px 20px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
+.Box {
+  color: #222;
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  line-height: 1.375;
+  margin-bottom: -1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+div {
+  display: block;
+}
+.review>div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.stars span {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+}
+.stars, .stars span {
+  background-size: 14px 13px;
+  height: 13px;
+  top: 1px;
+  width: 69px;
+}
+.scale span {
+  background-repeat: repeat-x;
+  display: block;
+}
+.stars {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAQAAAAz1Zf0AAAAWklEQVR4AY3O0QbDQBCG0UNYQi0hhBJqr8Iy7/94vewYlp65/Ay//4WlLnQLt3BbeIRH5jBFPVMHmlHS0CRnSqdiT3GH1edb8RGmoy4GwrBhM4Qmebn8XDrwBW7xChrojlOZAAAAAElFTkSuQmCC);
+}
+.scale {
+  background-repeat: repeat-x;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.new_hospital {
+  color: #3c4043;
+  padding: 2px 0 10px 0px;
+}
+.rllt__link {
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  color: #1a0dab;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,.10);
+}
+
+
+.slider {
+  width: 400px;
+  height: 260px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: pink;
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -145px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 224, 224);
+}
+
+#slide-1a:target ~ .image-container {
+  left: 0px;
+}
+#slide-2a:target ~ .image-container {
+  left: -500px;
+}
+#slide-3a:target ~ .image-container {
+  left: -1000px;
+}
+.buttons1 {
+  position: relative;
+  top: -115px;
+}
+.buttons1 a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 224, 224);
+}
+
+#slide-1b:target ~ .image-container {
+  left: 0px;
+}
+#slide-2b:target ~ .image-container {
+  left: -500px;
+}
+#slide-3b:target ~ .image-container {
+  left: -1000px;
+}
+.buttons2 {
+  position: relative;
+  top: -140px;
+}
+.buttons2 a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 224, 224);
+}
+
+  #slide-1c:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2c:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3c:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons3 {
+    position: relative;
+    top: -80px;
+  }
+  .buttons3 a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: rgb(231, 224, 224);
+  }
+
+
+#slide-1d:target ~ .image-container {
+  left: 0px;
+}
+#slide-2d:target ~ .image-container {
+  left: -500px;
+}
+#slide-3d:target ~ .image-container {
+  left: -1000px;
+}
+.buttons4 {
+  position: relative;
+  top: -140px;
+}
+.buttons4 a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 224, 224);
+}
+
+
+#slide-1e:target ~ .image-container {
+  left: 0px;
+}
+#slide-2e:target ~ .image-container {
+  left: -500px;
+}
+#slide-3e:target ~ .image-container {
+  left: -1000px;
+}
+.buttons5 {
+  position: relative;
+  top: -102px;
+}
+.buttons5 a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(231, 224, 224);
+}
+
+a1 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a1:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
