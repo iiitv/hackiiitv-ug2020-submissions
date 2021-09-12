@@ -87,11 +87,11 @@ body {
   margin-left: .75rem;
 }
 
-#weoffer a:hover{
-	background-color: #ACFFAD;
+#weoffer:hover{
+	color: white;
 }
 #useful-links a:hover{
-  background-color: #ACFFAD;
+  color:white;
 }
 
 #connected{
