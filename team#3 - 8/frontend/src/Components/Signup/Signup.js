@@ -1,6 +1,6 @@
 import React from "react";
 
-class NameForm extends React.Component {
+class Signup extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault()
 
@@ -120,4 +120,4 @@ class NameForm extends React.Component {
 
 
 
-export default NameForm;
+export default Signup;
