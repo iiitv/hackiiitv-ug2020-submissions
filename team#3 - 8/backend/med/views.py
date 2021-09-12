@@ -44,3 +44,14 @@ def customer_login(request):
     }
     return JsonResponse(response, safe=False)
 
+@csrf_exempt
+@require_http_methods(["POST"]) 
+def send_sms(request):
+    json_data = json.loads(request.body)
+    print(json_data)
+    response = Customer.send_sms(request, json_data['cust_email'])
+    res = {
+        "response": response
+    }
+    return JsonResponse(response, safe=False)
+
