@@ -34,6 +34,7 @@ public class Add_Contacts extends AppCompatActivity {
         //context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contacts);
+
     }
 
     public void Add_Contact_1(View view) {
@@ -120,18 +121,17 @@ public class Add_Contacts extends AppCompatActivity {
         Log.d(TAG, "Contact Phone Number: " + contactNumber);
 
         if (number == 1) {
-
             contact_number_1 = findViewById(R.id.editText_Phone1);
-            contact_number_1.setText((String) contactNumber);
+            contact_number_1.setText(contactNumber);
         }
         else if (number == 2){
             contact_number_2 = findViewById(R.id.editText_Phone2);
-            contact_number_2.setText((String) contactNumber);
+            contact_number_2.setText(contactNumber);
         }
 
         else if (number == 3){
             contact_number_3 = findViewById(R.id.editText_Phone3);
-            contact_number_3.setText((String) contactNumber);
+            contact_number_3.setText(contactNumber);
         }
     }
 
@@ -154,16 +154,16 @@ public class Add_Contacts extends AppCompatActivity {
         if(number == 1)
         {
             contact_name_1 = findViewById(R.id.editText_PersonName1);
-            contact_name_1.setText((String)contactName);
+            contact_name_1.setText(contactName);
         }
         else if (number == 2){
             contact_name_2 = findViewById(R.id.editText_PersonName2);
-            contact_name_2.setText((String)contactName);
+            contact_name_2.setText(contactName);
         }
 
         else if (number == 3){
             contact_name_3 = findViewById(R.id.editText_PersonName2);
-            contact_name_3.setText((String)contactName);
+            contact_name_3.setText(contactName);
         }
 
     }
@@ -202,5 +202,11 @@ public class Add_Contacts extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "You denied permission.", Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    public void Done(View view) {
+
+
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 }
