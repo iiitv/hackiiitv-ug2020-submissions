@@ -41,7 +41,7 @@ class _Personal_bankState extends State<Personal_bank> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class _Personal_bankState extends State<Personal_bank> {
                       ListTile(
                         leading: Icon(
                           Icons.house_siding,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -87,7 +87,7 @@ Last Transaction : Rs. 300'''),
                       ListTile(
                         leading: Icon(
                           Icons.house_siding,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -112,7 +112,7 @@ Last Transaction : Rs. 30,000'''),
                       ListTile(
                         leading: Icon(
                           Icons.house_siding,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -137,7 +137,7 @@ Last Transaction : Rs. 320'''),
                       ListTile(
                         leading: Icon(
                           Icons.house_siding,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

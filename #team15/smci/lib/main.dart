@@ -38,7 +38,7 @@ void main() {
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'SmCi',
+        title: 'KWIK-EZ',
         builder: (context, widget) => ResponsiveWrapper.builder(
               BouncingScrollWrapper.builder(context, widget!),
               maxWidth: 1200,

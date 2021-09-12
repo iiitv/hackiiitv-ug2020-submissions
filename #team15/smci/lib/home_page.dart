@@ -41,7 +41,7 @@ class _HomepageState extends State<Homepage> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class _HomepageState extends State<Homepage> {
                       ListTile(
                         leading: Icon(
                           Icons.construction,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -83,7 +83,7 @@ class _HomepageState extends State<Homepage> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -100,7 +100,7 @@ class _HomepageState extends State<Homepage> {
                       ListTile(
                         leading: Icon(
                           Icons.person,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

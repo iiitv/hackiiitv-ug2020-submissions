@@ -42,7 +42,7 @@ class _Future_mallState extends State<Future_mall> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -63,7 +63,7 @@ class _Future_mallState extends State<Future_mall> {
                       ListTile(
                         leading: Icon(
                           Icons.shopping_bag,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -85,7 +85,7 @@ class _Future_mallState extends State<Future_mall> {
                       ListTile(
                         leading: Icon(
                           Icons.shopping_cart,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

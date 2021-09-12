@@ -41,7 +41,7 @@ class _Place_pageState extends State<Place_page> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class _Place_pageState extends State<Place_page> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -83,7 +83,7 @@ class _Place_pageState extends State<Place_page> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -101,7 +101,7 @@ class _Place_pageState extends State<Place_page> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -120,7 +120,7 @@ class _Place_pageState extends State<Place_page> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

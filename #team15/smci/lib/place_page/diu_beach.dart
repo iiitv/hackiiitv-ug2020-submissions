@@ -42,7 +42,7 @@ class _DiucBeachState extends State<DiucBeach> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -63,7 +63,7 @@ class _DiucBeachState extends State<DiucBeach> {
                       ListTile(
                         leading: Icon(
                           Icons.place,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -88,7 +88,7 @@ Ticket Fare : NA'''),
                       ListTile(
                         leading: Icon(
                           Icons.file_copy,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -110,7 +110,7 @@ Ticket Fare : NA'''),
                       ListTile(
                         leading: Icon(
                           Icons.car_rental,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

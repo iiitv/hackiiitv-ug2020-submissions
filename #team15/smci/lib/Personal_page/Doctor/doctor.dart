@@ -42,7 +42,7 @@ class _Personal_doctorState extends State<Personal_doctor> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -63,7 +63,7 @@ class _Personal_doctorState extends State<Personal_doctor> {
                       ListTile(
                         leading: Icon(
                           Icons.person,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -86,7 +86,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                       ListTile(
                         leading: Icon(
                           Icons.person,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -106,7 +106,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                       ListTile(
                         leading: Icon(
                           Icons.sticky_note_2,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -124,7 +124,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                       ListTile(
                         leading: Icon(
                           Icons.medication_rounded,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -142,7 +142,7 @@ Location : Jay Prakash Nagar, Khagaria'''),
                       ListTile(
                         leading: Icon(
                           Icons.call,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

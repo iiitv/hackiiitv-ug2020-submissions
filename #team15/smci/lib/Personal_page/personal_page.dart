@@ -41,7 +41,7 @@ class _Personal_pageState extends State<Personal_page> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class _Personal_pageState extends State<Personal_page> {
                       ListTile(
                         leading: Icon(
                           Icons.health_and_safety,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -84,7 +84,7 @@ class _Personal_pageState extends State<Personal_page> {
                       ListTile(
                         leading: Icon(
                           Icons.account_balance_wallet,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(
@@ -101,7 +101,7 @@ class _Personal_pageState extends State<Personal_page> {
                       ListTile(
                         leading: Icon(
                           Icons.shopping_cart,
-                          color: Colors.black,
+                          // color: Colors.black,
                           size: 40,
                         ),
                         title: Text(

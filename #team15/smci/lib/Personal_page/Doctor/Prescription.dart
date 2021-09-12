@@ -40,7 +40,7 @@ class _Personal_PrescriptionState extends State<Personal_Prescription> {
                       height: 500,
                       // color: Colors.amber,
                       decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(5.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class _Personal_PrescriptionState extends State<Personal_Prescription> {
                         leading: Icon(
                           Icons.person,
                           size: 40,
-                          color: Colors.black,
+                          // color: Colors.black,
                         ),
                         title: Text(
                           'Rx',

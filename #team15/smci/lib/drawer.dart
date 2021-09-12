@@ -21,8 +21,7 @@ draw() {
                   // border: Border.all(color: const Color(0xFF28324E)),
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage(
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFp5SDGvQdK3UOl9fzYQhThPOycSgjJA2dw&usqp=CAU"),
+                    image: AssetImage("img/fotu.jpg"),
                   )),
             )),
       ),
