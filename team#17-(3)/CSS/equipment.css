@@ -32,9 +32,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-* {
-    box-sizing: border-box;
-  }
+
   
   .sbx-google {
     display: inline-block;
@@ -198,22 +196,24 @@
 }
 
 /* Info */
+#info
+{
+  margin-top: 9vw;
+  margin-bottom: 9vw;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  
+}
 .check
 {
-  background-color:red;
+  
   width:15vw;
   height:15vw;
   display:inline-flex;
-  margin:5rem;
+  margin:2rem;
 }
-#info
-{
-margin:4rem;
-  display:flex;
-  justify-content:center;
-  
-  
-}
+
 
 
 /* moto */
