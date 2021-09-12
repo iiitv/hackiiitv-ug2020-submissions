@@ -108,12 +108,12 @@ app.get('/register', function(req, res) {
 });
 
 app.get('/dashboard', function(req, res) {
-  res.render('/dashboard');
-})
+  res.render('dashboard');
+});
 
 // * get /main route
 app.get('/main', function() {
-
+ res.render('dashboard');
 });
 
 // * get /logout route
@@ -151,7 +151,7 @@ app.post("/login", function(req, res){
       console.log(err);
     } else {
       passport.authenticate("local")(req, res, function(){
-        res.redirect("/secrets");
+        res.redirect("/dashboard");
       });
     }
   });
