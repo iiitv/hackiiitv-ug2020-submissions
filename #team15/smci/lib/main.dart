@@ -16,6 +16,7 @@ import 'package:smci/Development_page/Dev_on-going/Dev_ongoing_detail4.dart';
 import 'package:smci/Development_page/Development_around.dart';
 import 'package:smci/Development_page/Feedback.dart';
 import 'package:smci/Personal_page/mall.dart';
+import 'package:smci/Personal_page/mall_todolist.dart';
 import 'package:smci/login.dart';
 
 void main() {
@@ -60,11 +61,11 @@ class MyApp extends StatelessWidget {
         "/DevelopmentPage_Await_detail_1": (context) => Dev_AwaitDetail1(),
         "/DevelopmentPage_Await_detail_2": (context) => Dev_AwaitDetail2(),
         "/DevelopmentPage_Feedback": (context) => Dev_feedback(),
-        "/PersonalPage_Mall": (context) => Future_Mall(),
+        "/PersonalPage_Mall_todo": (context) => Future_Mall_todo(),
       },
       // home: Login(),
       // home: Dev_main(),
-      home: Future_Mall(),
+      home: Future_mall(),
     );
   }
 }
