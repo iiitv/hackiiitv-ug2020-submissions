@@ -1,16 +1,5 @@
-# smci
+# Kwik-ez
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- User friendly app which is designed to keep a track on construction projects. It provides various features like photo sharing, comparison in trades, as well as updating the user with national guidelines for making the project successful.
+- HackIIITV-UG2020 : Winner 
+- Link : https://drive.google.com/file/d/1xtgnTgAGqCkLRl_Nf3qdnPaFCd6kIoSW/view?usp=share_link
